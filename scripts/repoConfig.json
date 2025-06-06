@@ -1,13 +1,13 @@
 {
   "repoName":"PublicCloud105-FortiFlex",
-  "author":"Jeff Kopko",
-  "workshopTitle":"Hugo for Fortinet TECWorkshops",
-  "themeVariant":"Workshop",
-  "logoBannerText":"FortiHugo",
-  "logoBannerSubText":"",
+  "author":"Jeff Kopko, John McDonough",
+  "workshopTitle":"Public Cloud 105-Achieving operational agility with FortiFlex",
+  "themeVariant":"Xperts2024",
+  "logoBannerText":"Public Cloud 105",
+  "logoBannerSubText":"FortiFlex",
   "errorLevel":"warning",
   "googleServicesID":"G-5RZBH288ST",
-  "marketingCode": "FortiHugo202",
+  "marketingCode": "XPerts25",
   "shortcuts": [
   {
     "text": "Fortinet Cloud CSE GitHub Org",
