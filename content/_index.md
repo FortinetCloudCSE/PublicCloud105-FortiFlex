@@ -1,11 +1,8 @@
 ---
-title: "FortiFlex FinOps Workshop"
-date: 2025-06-10
+title: " "
 weight: 1
-chapter: false
+archetype: "home"
 ---
-
-{{< Xperts25Banner line1="Public Cloud 105" line2="FortiFlex" line3="12345" >}}
 
 # FortiFlex FinOps Engineering Workshop
 
