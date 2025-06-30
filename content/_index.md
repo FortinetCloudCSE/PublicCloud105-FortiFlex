@@ -5,6 +5,7 @@ archetype: "home"
 ---
 
 # FortiFlex FinOps Engineering Workshop
+small change
 
 ## Real-World Scenario: CloudSecure Solutions MSSP Challenge
 
