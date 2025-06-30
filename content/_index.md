@@ -5,6 +5,8 @@ weight: 1
 chapter: false
 ---
 
+{{< Xperts25Banner line1="Public Cloud 105" line2="FortiFlex" line3="12345" >}}
+
 # FortiFlex FinOps Engineering Workshop
 
 ## Real-World Scenario: CloudSecure Solutions MSSP Challenge
