@@ -1,7 +1,7 @@
 ---
-title: "FortiFlex API"
+title: "FortiFlex Integrations"
 date: 2025-06-10
-weight: 32
+weight: 33
 chapter: false
 ---
 
