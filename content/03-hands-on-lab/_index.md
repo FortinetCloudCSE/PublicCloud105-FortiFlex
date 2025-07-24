@@ -1,6 +1,6 @@
 ---
 title: "Workshop Hands-On"
-weight: 3
+weight: 4
 ---
 
 # Workshop Agenda

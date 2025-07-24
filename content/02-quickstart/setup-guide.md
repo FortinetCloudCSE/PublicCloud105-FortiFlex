@@ -7,6 +7,8 @@ chapter: false
 
 # Lab Setup Guide
 
+{{< launchdemoform labdefinition="flex-105" >}}
+
 ## Prerequisites Checklist
 
 Before starting the hands-on lab, ensure you have:
