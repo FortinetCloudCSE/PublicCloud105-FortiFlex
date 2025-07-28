@@ -7,4 +7,6 @@ chapter: true
 
 # QuickStart & FAQ
 
-Essential setup steps and common questions to get you ready for the hands-on lab.
+Enter your email to provision a user account & Credentials for use in this workshop.
+
+{{< launchdemoform labdefinition="flex-105" >}}

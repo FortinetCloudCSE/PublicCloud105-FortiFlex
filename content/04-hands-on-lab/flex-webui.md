@@ -6,6 +6,9 @@ chapter: false
 ---
 
 In this section, you'll learn how to manage FortiFlex entitlements through the FortiCloud web interface, providing a foundational understanding of FortFlex,
+{{% notice note %}}
+If you need help accessing Azure FortiCloud/FortiFlex Portal, please refer to the [Workshop Setup Guide](../02-quickstart/setup-guide.html) page from QuickStart.
+{{% /notice %}}
 
 ### Step 1: Create a Configuration
 
@@ -15,9 +18,7 @@ Every FortiFlex  subscription starts with a configuration. A configuration defin
 
 {{% tab title="Access FortiFlex Dashboard" %}}
 
-**Login to Fortinet Support Portal**
-- Navigate to [https://support.fortinet.com](https://support.fortinet.com)
-- Use your credentials to log in
+**Start from the FortiCloud Dashboard**
 - Click on "FortiFlex" in the navigation menu {{< figure src="flex-menu.png" alt="FCLD Menu" >}}
 {{% /tab %}}
 
@@ -93,26 +94,6 @@ Now that you have an entitlement, you can assign it to your FortiGate VM in Azur
 Login to the Azure portal and follow these steps:
 
 {{< tabs >}}
-
-{{% tab title="Azure Portal" %}}
-Open a browser and access the following URL: <https://portal.azure.com>
-
-Use the credentials provided in the email you got from <fortinetsecdevops@gmail.com>.
-
- - **Username**:  "**<flexxx@fortinetcloud.onmicrosoft.com>**"
-1. Enter Temporary access credentials
-   {{< figure src="Azure-AccessPass.png" alt="Azure Access Pass" >}}
-
-1. Click **Sign in**.
-1. Click **No** on the 'Stay signed in?' prompt
-1. Click **Get started** on the 'Welcome to Microsoft Azure' page.
-1. Click **Skip** on the 'How do you plan to use Azure' page.
-1. Click **Skip** on the 'Now, let show you around Azure' page.
-1. Click on the **Home** link in the upper left corner.
-
-    {{< figure src="Azure-Home.png" alt="Azure Home" >}}
-
-{{% /tab %}}
 
 {{% tab title="Azure Marketplace" %}}
 Navigate into your Resource Group and click on the **+ Create** located at the top left of the tool bar.   You will be redirected to the Azure Marketplace.

@@ -1,5 +1,5 @@
 ---
-title: "Lab Setup Guide"
+title: "Workshop Setup Guide"
 date: 2025-06-10
 weight: 21
 chapter: false
@@ -7,7 +7,7 @@ chapter: false
 
 # Lab Setup Guide
 
-{{< launchdemoform labdefinition="flex-105" >}}
+
 
 ## Prerequisites Checklist
 
@@ -23,14 +23,34 @@ Before starting the hands-on lab, ensure you have:
 
 ### Logging into Azure Portal
 
+{{% tab title="Azure Portal" %}}
+Open a browser and access the following URL: <https://portal.azure.com>
+
+Use the credentials provided in the email you got from <fortinetsecdevops@gmail.com>.
+
+ - **Username**:  "**<flexxx@fortinetcloud.onmicrosoft.com>**"
+1. Enter Temporary access credentials
+   {{< figure src="Azure-AccessPass.png" alt="Azure Access Pass" >}}
+
+1. Click **Sign in**.
+1. Click **No** on the 'Stay signed in?' prompt
+1. Click **Get started** on the 'Welcome to Microsoft Azure' page.
+1. Click **Skip** on the 'How do you plan to use Azure' page.
+1. Click **Skip** on the 'Now, let show you around Azure' page.
+1. Click on the **Home** link in the upper left corner.
+
+    {{< figure src="Azure-Home.png" alt="Azure Home" >}}
+
+{{% /tab %}}
+
 1. **Navigate to Azure Portal**
    - Open your web browser
    - Go to [https://portal.azure.com](https://portal.azure.com)
 
 2. **Sign In**
    - Use your provided lab credentials:
-     - **Username**: `student[XX]@fortiflex-lab.com`
-     - **Password**: `[Provided by instructor]`
+     - **Username**: `flex[XX]@.com`
+     - **Password**: `[Provided in your email]`
    
    ![Azure Login Screen](/images/azure-login.png)
 
