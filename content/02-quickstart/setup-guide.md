@@ -21,18 +21,18 @@ Before starting the hands-on lab, ensure you have:
 
 ## Step 1: Azure Portal Access
 
-### Logging into Azure Portal
+Use these steps to access your Azure Portal environment.
 
+{{< tabs >}}
 {{% tab title="Azure Portal" %}}
-Open a browser and access the following URL: <https://portal.azure.com>
+Open a browser and access the following URL: **[https://portal.azure.com]**(https://portal.azure.com)
 
-Use the credentials provided in the email you got from <fortinetsecdevops@gmail.com>.
+Use the credentials provided in the email you got from **<fortinetsecdevops@gmail.com>**.
 
  - **Username**:  "**<flexxx@fortinetcloud.onmicrosoft.com>**"
-1. Enter Temporary access credentials
+1. Enter Temporary access credentials, and click **Sign In**
    {{< figure src="Azure-AccessPass.png" alt="Azure Access Pass" >}}
 
-1. Click **Sign in**.
 1. Click **No** on the 'Stay signed in?' prompt
 1. Click **Get started** on the 'Welcome to Microsoft Azure' page.
 1. Click **Skip** on the 'How do you plan to use Azure' page.
@@ -42,79 +42,57 @@ Use the credentials provided in the email you got from <fortinetsecdevops@gmail.
     {{< figure src="Azure-Home.png" alt="Azure Home" >}}
 
 {{% /tab %}}
+{{% tab title="Verify Resource Group" %}}
 
-1. **Navigate to Azure Portal**
-   - Open your web browser
-   - Go to [https://portal.azure.com](https://portal.azure.com)
-
-2. **Sign In**
-   - Use your provided lab credentials:
-     - **Username**: `flex[XX]@.com`
-     - **Password**: `[Provided in your email]`
-   
-   ![Azure Login Screen](/images/azure-login.png)
-
-3. **Verify Access**
    - After login, you should see the Azure dashboard
-   - Locate your assigned resource group: `fortiflex-lab-student[XX]`
-   - Verify you can see the pre-configured virtual network
+   - Locate your assigned resource group: `flex[XX]`
+   ![Azure Dashboard](Azure-portal-RG.png)
 
-   ![Azure Dashboard](/images/azure-dashboard.png)
+{{% /tab %}}
 
-### Key Azure Resources
+{{< /tabs >}}
 
-Your lab environment includes:
-
-**Resource Group**: `fortiflex-lab-student[XX]`
-- **Virtual Network**: `fortiflex-vnet`
-  - **Subnets**: 
-    - External: `10.0.1.0/24`
-    - Internal: `10.0.2.0/24`
-- **Network Security Groups**: Pre-configured with required rules
-- **Storage Account**: For VM diagnostics and logs
 
 ## Step 2: Fortinet Support Portal Access
 
-### Creating Your Support Portal Account
-
-{{% notice tip %}}
-If you already have a Fortinet Support Portal account, skip to the "Accessing FortiFlex" section.
+{{% notice style="tip" %}}
+We've provisioned a Fortinet Support Portal account with appropriate Flex entitlements for this workshop  Same credentials as the Azure Portal, slightly different logon procedure.
 {{% /notice %}}
 
-1. **Navigate to Support Portal**
-   - Go to [https://support.fortinet.com](https://support.fortinet.com)
-   - Click "Register" in the top right corner
 
-   ![Support Portal Homepage](/images/support-portal-home.png)
+{{< tabs >}}
 
-2. **Complete Registration**
-   - Fill out the registration form with your details
-   - Use your corporate email address
-   - Select "Partner" as your customer type
-   
-   ![Registration Form](/images/support-portal-register.png)
+{{% tab title="Fortinet Support Portal" %}}
 
-3. **Email Verification**
-   - Check your email for verification link
-   - Click the link to activate your account
+Browse to the following URL: **[https://customersso1.fortinet.com/saml-idp/proxy/demo_sallam_okta/login/]**(https://customersso1.fortinet.com/saml-idp/proxy/demo_sallam_okta/login/)
 
-### Accessing FortiFlex
+{{% notice style="warning" %}}
+**Important**: PLEASE URL EXACTLY AS ABOVE, ENDING WITH <kbd>/</kbd>. Do not use general Fortinet Support Portal URL.
+{{% /notice %}}
 
-1. **Login to Support Portal**
-   - Use your registered credentials
-   - Navigate to the main dashboard
+{{% /tab %}}
+{{% tab title="Login Steps" %}}
+Enter the credentials provided in the email you got from <fortinetsecdevops@gmail.com>
 
-2. **Access FortiFlex**
-   - Look for "FortiFlex" in the main navigation menu
+ - **Username**:  "**flex[XX]@fortinetcloud.onmicrosoft.com**"
+ - **Temporary Access Password**:  "**[TemporaryPassword]**"
+
+- You can choose **No** to "stay Signed In"
+- You may have to click **"Login"** at the SAML Login Portal
+{{% /tab %}}
+
+{{% tab title="FortiFlex Dashboard" %}}
+From the FortiCloud Main Portal, look for "FortiFlex" in the main navigation menu
    - Click to enter the FortiFlex dashboard
 
    ![FortiFlex Navigation](/images/fortiflex-navigation.png)
 
-3. **Verify Access**
-   - You should see the FortiFlex dashboard
-   - Confirm you can see "Configurations" and "Entitlements" sections
+{{% /tab %}}
 
-   ![FortiFlex Dashboard](/images/fortiflex-dashboard.png)
+{{< /tabs >}}
+
+
+
 
 ## Step 3: Postman Setup
 

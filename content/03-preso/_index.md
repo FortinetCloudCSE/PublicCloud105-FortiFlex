@@ -1,5 +1,5 @@
 ---
-title: "Learning Modules"
+title: "3. Learning Modules"
 weight: 3
 chapter: true
 ---
