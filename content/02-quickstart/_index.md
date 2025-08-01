@@ -5,7 +5,6 @@ weight: 2
 chapter: true
 ---
 
-# QuickStart & FAQ
 
 Enter your email to provision a user account & Credentials for use in this workshop.
 

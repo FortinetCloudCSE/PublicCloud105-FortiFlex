@@ -164,4 +164,4 @@ chapter: false
 
 **Questions Answered?** Time to get hands-on with FortiFlex!
 
-[Next: Hands-On Lab →](../04-hands-on-lab/)
+[Next: Hands-On Lab →](../03-hands-on-lab/)

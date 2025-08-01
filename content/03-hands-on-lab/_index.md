@@ -1,5 +1,5 @@
 ---
-title: "4. Workshop Hands-On"
+title: "3. Workshop Hands-On"
 weight: 4
 ---
 

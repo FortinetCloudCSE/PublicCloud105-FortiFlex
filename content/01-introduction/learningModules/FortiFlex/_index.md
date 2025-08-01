@@ -1,11 +1,10 @@
 ---
-title: "FortiFlex Platform Components"
+title: "FortiFlex"
 date: 2025-06-10
 weight: 12
 chapter: false
 ---
 
-# FortiFlex Platform Components
 
 ## What is FortiFlex?
 

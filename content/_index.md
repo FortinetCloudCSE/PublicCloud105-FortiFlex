@@ -4,6 +4,11 @@ weight: 1
 archetype: "home"
 ---
 
+# CTF Quiz Example
+** TO BE REPLACED WITH YOUR OWN CONTENT **
+{{< iframe src="https://ctf-container-app3-o32xpkqaca-uc.a.run.app" height="800" width="100%" >}}
+** TO BE REPLACED WITH YOUR OWN CONTENT **
+
 # FortiFlex FinOps Engineering Workshop
 small change
 
