@@ -37,10 +37,16 @@
     "weight":50
   },
   {
+    "text": "FortiFlex API Docs",
+    "URL": "https://fndn.fortinet.net/index.php?/fortiapi/954-fortiflex/956/",
+    "icon": "fa-tools",
+    "weight":60
+  },
+  {
     "text": "FortiFlex API tools",
     "URL": "https://github.com/FortinetCloudCSE/fortiflexvm-api",
     "icon": "fa-tools",
-    "weight":40
+    "weight":70
   }
   ]
 }

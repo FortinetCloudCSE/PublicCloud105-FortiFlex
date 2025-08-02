@@ -81,17 +81,11 @@ FortiFlex Dashboard
 
 ### 4. FortiFlex API
 
-**Base URL**: `https://support.fortinet.com/ES/api/fortiflex/`
+**API Documentation**: [FNDN](https://fndn.fortinet.net/index.php?/fortiapi/954-fortiflex/956/)
+
+**Base URL**: `https://support.fortinet.com/ES/api/fortiflex/v2/'
 
 **Authentication**: API key-based authentication
-
-**Core Endpoints**:
-- `GET /configs` - List configurations
-- `POST /configs` - Create configuration
-- `GET /entitlements` - List entitlements  
-- `POST /entitlements` - Create entitlement
-- `PUT /entitlements/{id}` - Modify entitlement
-- `DELETE /entitlements/{id}` - Remove entitlement
 
 **API Benefits**:
 - Programmatic control over all FortiFlex operations
@@ -99,62 +93,19 @@ FortiFlex Dashboard
 - Automated scaling based on metrics
 - Custom billing and reporting solutions
 
-## FortiCloud Integration
-
-### Organizations
-
-FortiFlex integrates with FortiCloud Organizations to provide:
-
-**Centralized Management**:
-- Single pane of glass for multiple customers/tenants
-- Hierarchical organization structure
-- Delegated administration capabilities
-
-**Access Control**:
-- Role-based access control (RBAC)
-- Fine-grained permissions
-- Audit logging and compliance
-
-**Multi-Tenancy**:
-- Customer isolation and separation
-- Individual billing and reporting
-- Customized configurations per tenant
-
-### Identity and Access Management (IAM)
-
-**User Roles**:
-- **Admin**: Full access to all FortiFlex operations
-- **Operator**: Create and manage entitlements within existing configurations
-- **Viewer**: Read-only access to configurations and usage data
-
-**API Access**:
-- Individual API keys per user
-- Scoped permissions based on role
-- Key rotation and lifecycle management
-
-**Best Practices**:
-- Use service accounts for automated operations
-- Implement least-privilege access principles
-- Regular access reviews and cleanup
-
 ## Useful Resources
 
 ### Documentation
-- **FortiFlex User Guide**: [https://docs.fortinet.com/product/fortiflex](https://docs.fortinet.com/product/fortiflex)
-- **API Documentation**: [https://docs.fortinet.com/document/fortiflex/api](https://docs.fortinet.com/document/fortiflex/api)
-
-### Community & Support
-- **FortiFlex Community Forum**: Technical discussions and best practices
-- **Fortinet Developer Network**: API samples and integration guides
-- **Support Portal**: Technical support and training resources
+- [**FortiFlex Docs**](https://docs.fortinet.com/product/flex-vm/25.2)
+- [**API Documentation**](https://fndn.fortinet.net/index.php?/fortiapi/954-fortiflex/956/)
 
 ### Tools & Integrations
-- **Postman Collection**: Pre-built API requests for testing
-- **Terraform Provider**: Infrastructure-as-code integration
-- **Azure/AWS Marketplace**: Direct cloud platform integration
+- **FortiFlex Calculator**: [Estimate your FortiFlex costs](https://fndn.fortinet.net/index.php?/tools/fortiflex/)
+- **Code**: [Ansible, Terraform, Python, and Postman](https://github.com/FortinetCloudCSE/fortiflexvm-api)
+- **Terraform Provider**: [Infrastructure-as-code integration](https://registry.terraform.io/providers/fortinetdev/fortiflexvm/latest )
+- **Ansible Module**: https://galaxy.ansible.com/ui/repo/published/fortinet/fortiflexvm/ 
+
 
 ---
 
 Now that you understand the FortiFlex components, let's get hands-on experience with the platform.
-
-[Next: QuickStart & FAQ →](../02-quickstart/)

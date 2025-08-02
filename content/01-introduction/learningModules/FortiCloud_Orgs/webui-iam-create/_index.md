@@ -3,7 +3,7 @@ title: "WebUI IAM User Creation"
 weight: 40
 ---
 
-IAM User creation is generally the same as IdP Role creation.  The interface differs slightly, but the components are the same.
+User creation is generally the same as IAM Users, IdP Role creation, or API Users.  The interface differs slightly, but the components are the same.
 
 | Number | Explanation                                                             |
 |--------|-------------------------------------------------------------------------|
