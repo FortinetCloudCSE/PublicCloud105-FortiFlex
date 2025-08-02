@@ -5,10 +5,18 @@ weight: 31
 chapter: false
 ---
 
+|                            |                                                                                                                                                                   |  
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Goal**                   | Gain Experience with the FortiFlex WebUI                                                                                                                          |
+| **Task**                   | Create a FortiFlex configuration and entitlement, deploy a FortiGate VM in Azure using the entitlement, and then update the configuration to increase vCPU count.
+| **Validation** | FortiFlex Licensed 4vCPU FortiGate VM in Azure with matching SN and License.                                                                                      |
+
 In this section, you'll learn how to manage FortiFlex entitlements through the FortiCloud web interface, providing a foundational understanding of FortFlex,
 {{% notice note %}}
 If you need help accessing Azure FortiCloud/FortiFlex Portal, please refer to the [Workshop Setup Guide](../02-quickstart/setup-guide.html) page from QuickStart.
 {{% /notice %}}
+
+
 
 ### Step 1: Create a Configuration
 
