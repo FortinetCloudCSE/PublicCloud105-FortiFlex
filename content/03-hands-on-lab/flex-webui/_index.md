@@ -106,11 +106,17 @@ Login to the Azure portal and follow these steps:
 {{% tab title="Azure Marketplace" %}}
 Navigate into your Resource Group and click on the **+ Create** located at the top left of the tool bar.   You will be redirected to the Azure Marketplace.
 
-In the Marketplace search bar, enter **Fortinet FortiGate** and then enter.  Navigate to the **Fortinet FortiGate Next-Generation Firewall** offering from Fortinet and select **Create** and **Single VM**.
+In the Marketplace search bar, type: **`Fortinet FortiGate`** and then enter.  Navigate to the **Fortinet FortiGate Next-Generation Firewall** offering from Fortinet and select **Create** and **Single VM**.
 
 {{< figure src="azure-mktp.png" alt="Azure Marketplace" >}}
 
  You will be redirected to the **Create Single VM** template.
+
+{{% notice warning %}}
+Make sure you select the **BYOL** (Bring Your Own License) option.  This is important as it allows you to use your FortiFlex entitlement.  When you click **Create** on the listing, you should see options for **Active-Active, Active-Passive, and Single VM**.  
+
+If you see anything referencing **PAYG (Pay-As-You-Go)**, you are viewing the wrong listing.
+{{% /notice %}}
 
 {{% /tab %}}
 
