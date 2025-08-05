@@ -5,7 +5,7 @@ archetype: "home"
 ---
 
 # CTF Quiz Example
-** TO BE REPLACED WITH YOUR OWN CONTENT **
+** TO BE REPLACED WITH YOUR OWN CONTENT 2 **
 
 {{< iframe src="https://ctf-cookies-o32xpkqaca-uc.a.run.app/" height="800" width="100%" >}}
 ** TO BE REPLACED WITH YOUR OWN CONTENT **
