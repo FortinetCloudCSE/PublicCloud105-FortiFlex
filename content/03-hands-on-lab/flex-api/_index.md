@@ -9,19 +9,97 @@ chapter: false
 
 In this section, you'll learn how to automate FortiFlex operations using the REST API and Postman, then explore serverless automation with Azure Functions.
 
-We'll start by 
+We'll start by setting up Postman with our FortiFlex Collection, then create an API Key in FortiCloud, and finally use Postman to interact with the FortiFlex API. After that, we'll build a serverless automation function in Azure to scale FortiGate resources based on business logic.
 
-## Lab Exercise 5: FortiFlex API with Postman
 
-### Step 1: API Authentication Setup
+### Step 1: Import FortiFlex Postman Collection 
+Kali Linux comes with Postman pre-installed. Open it by clicking in the top left Kali Manu and search for  `Postman`.  Click on the **Run Postman** icon to open the application.
 
-1. **Generate API Key**
-   - In FortiFlex WebUI, go to "Administration" → "API Keys"
-   - Click "Generate New API Key"
-   - Provide description: `Workshop API Key Student[XX]`
-   - Copy the generated key (you won't see it again!)
+{{< tabs >}}
+{{% tab title="Access Kali Linux" %}}
 
-   ![API Key Generation](/images/api-key-generation.png)
+Find the Kali Public IP from your terraform output, and then browser to the URL:
+  ```
+  https://<kali-IP>:8443
+  ```
+
+  - Enter ```guacadmin``` for Username and enter ```S3cur3P4ssw0rd123!```
+  - Click **Login**
+
+{{% /tab %}}
+{{% tab title="Open Postman" %}}
+- Kali Linux comes with Postman pre-installed
+- Open Postman by clicking in the top left Kali Manu and search for  `Postman`.  
+- Click on the **Run Postman** icon to open the application.
+
+
+{{< notice info >}}
+You will need to login to Postman to enable use of a collection.  So either login to an existing account you have, or create a new one.
+{{< /notice >}}
+
+{{% /tab %}}
+
+
+{{% tab title="Import FortiFlex Postman Collection" %}}
+  - In Postman, click on **File**-->**Import** in the top left corner
+  - On the import dialog, enter the following URL: 
+    - `https://raw.githubusercontent.com/FortinetCloudCSE/fortiflexvm-api/refs/heads/main/api/Postman/v2/Fortinet%20FortiFlex%20V2.0%20(FlexVM).postman_collection.json`
+  - You should see the **Fortinet FortiFlex v2.0 (FlexVM)** collection appear in the left sidebar
+  ![postman-import](p-import.png)
+{{% /tab %}}
+
+{{< /tabs >}}
+
+
+### Step 2: API Authentication Setup
+
+{{< tabs >}}
+{{% tab title="FortiCloud IAM Portal" %}}
+From the FortiCloud Portal, click on **Services**-->**IAM**
+{{<figure src="fcld-iam.png" alt="FortiCloud IAM Portal" caption="FortiCloud IAM Portal" >}}
+
+{{% /tab %}}
+{{% tab title="Create FortiFlex API Key" %}}
+Click on **Add New --> API User**
+{{<figure src="create-api-user.png" alt="Create FortiFlex API User" caption="Create FortiFlex API User" >}}
+{{% /tab %}}
+{{% tab title="API User" %}}
+Enter a username for the API User such as: `flexapiuser`
+{{<figure src="add-api-user.png" alt="API User" caption="API User Creation" >}}
+{{% /tab %}}
+{{% tab title="API Credentials" %}}
+- When the API User is created, you will see a message to download the credentials.
+- Click to download, and enter a password to encrypt the file, such as `FortiFlex2025!`
+
+{{<figure src="api-user-cred-download.png" alt="API Credentials" caption="API Credentials" >}}
+
+- You'll get a password protected zip file with the API credentials.  Open it using the same **password** you entered when downloading the file.
+- The folder will contain a single text file with the APIId and password
+- You'll enter the apiId and password into a Postman Environment in the next step
+{{% /tab %}}
+
+{{% tab title="Postman Environment" %}}
+- Back on the Kali Linux host, From Postman: 
+- Import the FortiFlex Postman environment by choosing **File**-->**Import** and entering the following URL:
+`https://raw.githubusercontent.com/FortinetCloudCSE/fortiflexvm-api/refs/heads/main/api/Postman/v2/fortinet-api-flexvm.postman_environment.json`
+- You will see the **fortinet-api=flexvm** environment appear in the main screen,.
+- Copy the `apiId` from the credentials text file into the **api-username** Postman **Initial value** variable
+- Copy the `password` from the credentials text file into the **api-password** Postman **Initial value** variable
+- Click **Save** to save the environment
+{{<figure src="postman-environment.png" alt="Postman Environment" >}}
+
+{{% /tab %}}
+{{% tab title="Flex API Authentication" %}}
+- Back on Kali/Postman, go to In the Flex API collection and clock on the **Retrieve Auth Token** request, under **Authenticate** 
+- In the Top right, choose your newly updated environment **fortinet-api-flexvm**
+- Click the Send button
+- You should see a response with a 200 OK status and an `access_token` in the response body
+- If you open the scripts tab for this request, you can see that we automatically store this return value for use in subsequent requests
+{{< figure src="flex-auth-return.png" alt="Postman Auth Token" >}}
+
+Congratulations, you're now authenticated with the FortiFlex API! You can use this token for all subsequent API requests.
+{{% /tab %}}
+{{< /tabs >}}
 
 2. **Configure Postman Environment**
    - Open Postman application

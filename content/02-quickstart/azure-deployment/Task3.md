@@ -50,12 +50,15 @@ There are portions of this lab that will require large amounts of text to be ent
 
 - Right click on the desktop where you want to past and click "paste" or "paste from clipboard" depending on which option is available.
 
-### Open Wireshark
+### Open Postman
+Kali Linux comes with Postman pre-installed. Open it by clicking in the top left Kali Manu and search for  `Postman`.  Click on the **Run Postman** icon to open the application.
 
-- Click on the **Applications** icon at the top right of the Kali home screen.  Search for "wireshark" and open the application.
-![Find shark](find_shark.png)
-  - You will be asked to Authenticate.  
-  ![Shark Auth](shark_auth.png)
-  - You will input the labuser password ```S3cur3P4ssw0rd123!``` and click **Authenticate**
+
+  - When postman opens, select **Continue without an account**
+    ![postmanlite](p-light.png)
+   - Now select **Open Lightweight API Client**
+    ![postmanlite2](p-light2.png)
+
+
   
 
