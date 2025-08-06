@@ -5,10 +5,6 @@ weight: 21
 chapter: false
 ---
 
-# Lab Setup Guide
-
-
-
 ## Prerequisites Checklist
 
 Before starting the hands-on lab, ensure you have:
@@ -19,12 +15,12 @@ Before starting the hands-on lab, ensure you have:
 - [ ] **Web Browser**: Chrome, Firefox, or Edge (latest version)
 - [ ] **Lab Environment Access**: Resource group and permissions provided by instructor
 
-## Step 1: Azure Portal Access
+## Step 1: Azure Portal & Cloudshell Access
 
 Use these steps to access your Azure Portal environment.
 
 {{< tabs >}}
-{{% tab title="Azure Portal" %}}
+{{% tab title="Azure Portal & Cloudshell Setup" %}}
 Open a browser and access the following URL: **[https://portal.azure.com]**(https://portal.azure.com)
 
 Use the credentials provided in the email you got from **<fortinetsecdevops@gmail.com>**.
@@ -46,10 +42,45 @@ Use the credentials provided in the email you got from **<fortinetsecdevops@gmai
 
    - After login, you should see the Azure dashboard
    - Locate your assigned resource group: `flex[XX]`
-   ![Azure Dashboard](Azure-portal-RG.png)
+     {{< figure src="Azure-portal-RG.png" alt="Azure Resource Group" >}}
 
 {{% /tab %}}
 
+{{% tab title="Open Cloud Shell" %}}
+1. Click the **Cloud Shell** icon in the top navigation bar and Select **Bash** as the shell type
+{{< figure src="cloudshell-06.png" alt="Azure Cloud Shell" >}}
+3. Wait for the Cloud Shell to initialize
+
+   
+{{% /tab %}}
+
+{{% tab title="Cloudshell storage" %}}
+* Next, you will see a "Getting started" page.
+    * Select **Mount Storage Account**
+    * Choose **Internal-Training** as the Storage account subscription
+    * Click Apply
+
+    {{< figure src="cloudshell-07.png" alt="Azure Cloud Shell Storage" >}}
+{{% /tab %}}
+{{% tab title="Mount Storage" %}}
+* On the Mount storage account  screen 
+  * click **Select existing storage account**
+  * click **Next**
+
+    {{< figure src="cloudshell-08.png" alt="Azure Cloud Shell Storage Mount" >}}
+{{% /tab %}}
+
+{{% tab title="Storage Account" %}}
+* On the Select storage account screen (values in drop down)
+  * choose **Internal-Training** as description
+  * resource group will be **"student number"-flex105-workshop** 
+  * storage account name will be "student number" floolowed by some random numbers and letters
+  * File share will be **cloudshellshare**
+  * Click **Select**
+
+    {{< figure src="cloudshell-09.png" alt="Azure Cloud Shell Storage Account" >}}
+  
+{{% /tab %}}
 {{< /tabs >}}
 
 

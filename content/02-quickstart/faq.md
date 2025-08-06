@@ -4,9 +4,6 @@ date: 2025-06-10
 weight: 22
 chapter: false
 ---
-
-# Frequently Asked Questions
-
 ## General FortiFlex Questions
 
 ### Q: What's the difference between FortiFlex and traditional Fortinet licensing?

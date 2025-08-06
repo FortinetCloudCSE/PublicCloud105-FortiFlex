@@ -122,10 +122,6 @@ If you see anything referencing **PAYG (Pay-As-You-Go)**, you are viewing the wr
 
 {{% tab title="Create FGT VM" %}}
 
-{{< figure src="Azure-FGT-Marketplace.png" alt="Azure FGT Marketplace" >}}
-
-
-
 1. Under the **Basics** tab, the **Subscription** and **Resource Groups** should already be filled in with your assigned info.  If not, see the screen shot below for details.
 
 {{< notice note >}}
@@ -146,7 +142,8 @@ Use the **flexXX** username you've been assigned. Replace **[XX]** with your spe
 
 
 {{% tab title="Assign Entitlement" %}}
-In the Instance Details tab, scroll down to the **License** section, and check the box for **Use FortiFlex Entitlement** entering the License File Token you copied earlier. {{< figure src="fgt-license.png" alt="FGT License" >}}
+
+In the Instance Details tab, scroll down to the **License** section, and check the box for **Use FortiFlex Entitlement** entering the License File Token you copied earlier.
 
 {{< figure src="createVM-FlexLicense.png" alt="VM Creation Flex License" >}}
 
@@ -267,6 +264,8 @@ On the VM Overview Page, you can verify that the VM size has been updated to ref
 {{< /tabs >}}
 
 ### Step 6: Add the additional CPU's to FortiGate
+
+**THIS SECTION NEEDS WORK**
 
 Finally, log back into the FortiGate VM WebUI to verify that the license now reflects the updated vCPU count, and add the additional CPU's to the FortiGate configuration.
 

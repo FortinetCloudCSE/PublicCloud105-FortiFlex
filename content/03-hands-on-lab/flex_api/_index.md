@@ -9,6 +9,8 @@ chapter: false
 
 In this section, you'll learn how to automate FortiFlex operations using the REST API and Postman, then explore serverless automation with Azure Functions.
 
+We'll start by 
+
 ## Lab Exercise 5: FortiFlex API with Postman
 
 ### Step 1: API Authentication Setup
