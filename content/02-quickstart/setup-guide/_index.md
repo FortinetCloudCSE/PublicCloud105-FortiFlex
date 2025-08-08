@@ -7,11 +7,11 @@ chapter: false
 
 ## Prerequisites Checklist
 
-Before starting the hands-on lab, ensure you have:
+Before starting the hands-on lab, ensure you have completed the following setup steps and have the necessary tools ready:
 
 - [ ] **Azure Portal Access**: Valid Azure subscription credentials
 - [ ] **Fortinet Support Portal Account**: Registered account with FortiFlex access
-- [ ] **Postman Installed**: Desktop application or web version
+- [ ] **Postman**: Desktop application, Web Version, or Azure VM
 - [ ] **Web Browser**: Chrome, Firefox, or Edge (latest version)
 - [ ] **Lab Environment Access**: Resource group and permissions provided by instructor
 
@@ -125,7 +125,12 @@ From the FortiCloud Main Portal, look for "FortiFlex" in the main navigation men
 
 
 
-## Step 3: Postman Setup
+## Step 3: Postman Options
+
+We will be using an existing Python Collection to interact with the FortiFlex API
+1. [Postman desktop application](https://www.postman.com/) will provide the best user experience and is a great tool for working with API's
+2. If you can't install the Desktop client for some reason, you can use [Python's web version](https://identity.getpostman.com/login?continue=https%3A%2F%2Fgo.postman.co%2Fhome) requiring a login (you can use your personal email)
+3. If you'd prefer not creating a Postman login, you can create an Azure VM with Postman pre-installed, and import the 
 
 ### Installing Postman
 
@@ -138,72 +143,8 @@ From the FortiCloud Main Portal, look for "FortiFlex" in the main navigation men
 1. Go to [https://web.postman.co/](https://web.postman.co/)
 2. Sign in with your Google or create a Postman account
 
-### Importing FortiFlex Collection
-
-1. **Download the Collection**
-   - Go to [https://github.com/FortinetCloudCSE/fortiflexvm-api](https://github.com/FortinetCloudCSE/fortiflexvm-api)
-   - Download `FortiFlex-API-Collection.json`
-
-2. **Import into Postman**
-   - Open Postman
-   - Click "Import" button
-   - Select the downloaded JSON file
-   - Verify the collection appears in your workspace
-
-   ![Postman Import](/images/postman-import.png)
-
-3. **Configure Environment Variables**
-   - Click the gear icon to manage environments
-   - Create new environment called "FortiFlex Lab"
-   - Add the following variables:
-     - `baseUrl`: `https://support.fortinet.com/ES/api/fortiflex`
-     - `apiKey`: `[Will be provided during lab]`
-
-   ![Postman Environment](/images/postman-environment.png)
-
-## Step 4: Lab Environment Verification
-
-### Connectivity Test
-
-1. **Test Azure Access**
-   - Navigate to your resource group
-   - Click on the virtual network
-   - Verify you can see subnet configurations
-
-2. **Test FortiFlex Access**
-   - Log into the FortiFlex dashboard
-   - Try navigating to different sections
-   - Verify no error messages appear
-
-3. **Test Postman**
-   - Open the imported FortiFlex collection
-   - Select the "Get Configurations" request
-   - Verify the request structure looks correct
-
-### Troubleshooting Common Issues
-
-**Azure Portal Issues**:
-- **Problem**: Can't see resource group
-- **Solution**: Verify you're using the correct subscription, check with instructor
-
-**FortiFlex Access Issues**:
-- **Problem**: Don't see FortiFlex menu option
-- **Solution**: Account may need FortiFlex access enabled, contact instructor
-
-**Postman Issues**:
-- **Problem**: Collection won't import
-- **Solution**: Download collection again, ensure it's the correct JSON format
-
-## Next Steps
-
-Once you've completed all setup steps:
-
-1. Verify you can access all three platforms (Azure, FortiFlex WebUI, Postman)
-2. Take note of your assigned student number for naming conventions
-3. Review the FAQ section for common questions
-4. Proceed to the hands-on lab when ready
-
----
+**Option 3: Azure VM**
+1. Continue to the next step to create an Azure VM with Postman pre-installed
 
 **Setup Complete?** Let's address some common questions before diving into the lab.
 
