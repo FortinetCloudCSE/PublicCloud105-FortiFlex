@@ -15,6 +15,16 @@ FortiFlex is Fortinet's usage-based licensing solution that transforms how organ
 - **Flexible scaling** to match business demands
 - **Simplified management** through centralized control
 
+## FortiFlex Flavors: Enterprise vs MSSP
+
+- FortiFlex Enterprise(also called FortiFlex prepaid subscription service): Designed for individual organizations to manage their own Fortinet deployments with flexible licensing.
+  - Flex Points are purchased in advance and consumed as Fortinet products are deployed.
+  - Ideal for enterprises with predictable usage patterns and a need for direct control over their security infrastructure.
+- FortiFlex MSSP(also referred to a FortiFlex postpaid subscription service): Tailored for Managed Security Service Providers (MSSPs) to offer Fortinet services to multiple customers.
+  - Allows MSSPs to manage multiple customer deployments from a single FortiFlex account.
+  - Provides features for multi-tenancy, centralized billing, and customer management.
+  - Ideal for MSSPs looking to provide automated Marketplace deployments with flexible billing to their customers.
+
 ## Core Components
 
 ### 1. FortiFlex Configurations
@@ -46,6 +56,12 @@ FortiFlex is Fortinet's usage-based licensing solution that transforms how organ
 - Charged by points per hour of operation
 - Different VM sizes consume different point rates
 - Automatic billing integration with Fortinet accounts
+
+{{% notice warning %}}
+Due to the regulatory nature and requirements around serial numbers and billing of the FortiFlex program, it is not possible to delete configurations or entitlements once they are created. This is to ensure compliance and accurate billing records are maintained in perpetuity.
+
+As such, we will not be creating any more entities than are necessary for demonstration purposes during this workshop
+{{% /notice %}}
 
 ### 3. FortiFlex WebUI
 
