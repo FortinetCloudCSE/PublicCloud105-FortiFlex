@@ -1,5 +1,5 @@
 ---
-title: "Workshop Setup Guide"
+title: Workshop Setup Guide
 date: 2025-06-10
 weight: 21
 chapter: false
@@ -21,7 +21,7 @@ Use these steps to access your Azure Portal environment.
 
 {{< tabs >}}
 {{% tab title="Azure Portal & Cloudshell Setup" %}}
-Open a browser and access the following URL: **[https://portal.azure.com]**(https://portal.azure.com)
+Open a browser and access the following URL: **[https://portal.azure.com](https://portal.azure.com)**
 
 Use the credentials provided in the email you got from **<fortinetsecdevops@gmail.com>**.
 
@@ -87,7 +87,7 @@ Use the credentials provided in the email you got from **<fortinetsecdevops@gmai
 ## Step 2: Fortinet Support Portal Access
 
 {{% notice style="tip" %}}
-We've provisioned a Fortinet Support Portal account with appropriate Flex entitlements for this workshop  Same credentials as the Azure Portal, slightly different logon procedure.
+We've provisioned a Fortinet Support Portal account with appropriate Flex entitlements for this workshop  Same credentials as the Azure Portal, slightly different logon procedure.  **YOU MUST LOGIN USING THIS URL** which is conveniently perma-listed on the left navbar, and as long as you use the same browser as your Azure login, you should be signed in with SAML SSO
 {{% /notice %}}
 
 
@@ -95,7 +95,7 @@ We've provisioned a Fortinet Support Portal account with appropriate Flex entitl
 
 {{% tab title="Fortinet Support Portal" %}}
 
-Browse to the following URL: **[https://customersso1.fortinet.com/saml-idp/proxy/demo_sallam_okta/login/]**(https://customersso1.fortinet.com/saml-idp/proxy/demo_sallam_okta/login/)
+Browse to the following URL: **[https://customersso1.fortinet.com/saml-idp/proxy/demo_sallam_okta/login/](https://customersso1.fortinet.com/saml-idp/proxy/demo_sallam_okta/login/)**
 
 {{% notice style="warning" %}}
 **Important**: PLEASE URL EXACTLY AS ABOVE, ENDING WITH <kbd>/</kbd>. Do not use general Fortinet Support Portal URL.
@@ -116,8 +116,7 @@ Enter the credentials provided in the email you got from <fortinetsecdevops@gmai
 From the FortiCloud Main Portal, look for "FortiFlex" in the main navigation menu
    - Click to enter the FortiFlex dashboard
 
-   ![FortiFlex Navigation](/images/fortiflex-navigation.png)
-
+  {{< figure src="flex-menu.png" alt="FortiFlex Dashboard" class="center" >}}
 {{% /tab %}}
 
 {{< /tabs >}}
@@ -135,6 +134,14 @@ We will be using an existing Python Collection to interact with the FortiFlex AP
 ### Installing Postman
 
 **Option 1: Desktop Application (Recommended)**
+<span style="font-size:2em; animation: pointLeft 1s infinite alternate;">👈</span>
+
+<style>
+@keyframes pointLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-10px); }
+}
+</style>
 1. Download from [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
 2. Install following the standard process for your operating system
 3. Create a free Postman account when prompted

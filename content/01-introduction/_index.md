@@ -5,17 +5,22 @@ weight: 1
 chapter: true
 ---
 
-### Welcome to Public Cloud 105: FortiCloud Organizations & FortiFlex
+### Welcome to Public Cloud 105: FortiFlex & FortiCloud Organizations
 
-In this brief workshop, we'll explore the FortiFlex feature set.  We will show examples and limitations of the Organizations capabilities.  Finally, we'll explore FortiFlex entitlements within an Org structure and provide examples of the FortiFlex API.
+In this workshop, we'll explore the FortiFlex feature set.  We will show examples and limitations of the Organizations capabilities.  Finally, we'll explore FortiFlex entitlements within an Org structure and provide examples of the FortiFlex API.
+{{< figure src="flex-intro.png" alt="FortiFlex Intro" class="center" >}}
+
 ### Learning Objectives
-- Uncover FortiCloud Organizations basic terminology and concepts
-- Understand how FortiFlex operates in a multi-tenant environment
+- Lean how FortiFlex can simplify Fortinet Product Licensing across much of the product portfolio
+- Discover FortiCloud Organizations basic terminology and concepts
+- Understand how FortiFlex operates in a single & multi-tenant environment
 - Learn how to use the FortiFlex API to manage configurations and entitlements
 
 ### Primary Use Cases
+- Enterprises
+   - prepaid/flexible licensing
 - MSSP
-  - FortiFlex licensing for customers and/or offered in MSSP Marketplaces
+  - FortiFlex PAY-as-you-Go licensing for customers and/or offered in MSSP Marketplaces
   - Partner/Enterprise/Customer Consolidation & Organization of (FortiCloud Accounts, Users, and Assets)
 - FortiSASE
 {{< figure src="org-useCase.png" alt="FortiCloud Organizations Use Cases" class="center" >}}
@@ -49,31 +54,27 @@ By the end of this workshop, you will be able to:
 ## Workshop Components
 
 ### Prerequisites
-- **Technical Background**: 3-5 years experience with public cloud platforms
-- **Fortinet Knowledge**: Basic familiarity with FortiGate and FortiManager
-- **Required Access**: 
-  - Azure subscription (provided in lab environment)
-  - Fortinet Support Portal account
-  - Postman application
+- **Technical Background**: Basics of web apps
+- **Fortinet Knowledge**: Basic familiarity with FortiGate and 
+
 
 ### Workshop Duration
 - **Total Time**: 4 hours
-- **Introduction & Setup**: 45 minutes
-- **Manual Operations**: 90 minutes  
-- **API Automation**: 90 minutes
+- **Introduction & Setup**: 60 minutes
+- **Manual Operations**: 45 minutes  
+- **API Automation**: 45 minutes
+- **Integrations & Marketplace Demo**: 45 minutes
 - **Wrap-up & Q&A**: 15 minutes
 
 ### Lab Environment
 Your lab environment includes:
-- Pre-configured Azure Resource Group
-- Virtual network with appropriate subnets
-- Required IAM permissions for FortiFlex operations
+- Pre-configured Azure environment & Resource Group
+- FortiCloud account with Flex licensing & Required IAM permissions for FortiFlex operations
 - Sample configurations and scripts
 
 ### Workshop Materials
 - Step-by-step lab guides with screenshots
 - FortiFlex API Postman collection
-- Azure serverless function templates
 - Best practices documentation
 
 ## Success Criteria

@@ -1,6 +1,6 @@
 ---
-title: "Task 2 - Run Terraform"
-weight: 29
+title: Terraform VM deploy
+weight: 35
 ---
 
 ### Launch resources using Terraform

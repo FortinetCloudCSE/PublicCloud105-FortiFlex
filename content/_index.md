@@ -4,14 +4,10 @@ weight: 1
 archetype: "home"
 ---
 
-# CTF Quiz Example
-** TO BE REPLACED WITH YOUR OWN CONTENT **
 
-{{< iframe src="https://ctf-cookies-o32xpkqaca-uc.a.run.app/" height="800" width="100%" >}}
-** TO BE REPLACED WITH YOUR OWN CONTENT **
 
-# FortiFlex FinOps Engineering Workshop
-small change
+# FortiFlex Workshop
+
 
 ## Real-World Scenario: CloudSecure Solutions MSSP Challenge
 
@@ -35,8 +31,9 @@ With FortiFlex's usage-based licensing and API-driven automation, CloudSecure So
 
 **Workshop Goal**: Learn how to implement FortiFlex to solve similar challenges in your organization through hands-on experience with both manual operations and API automation.
 
----
+# CTF Quiz Example
+** TO BE REPLACED WITH YOUR OWN CONTENT **
 
-*Ready to transform your FinOps approach? Let's dive into FortiFlex!*
+{{< iframe src="https://ctf-cookies-o32xpkqaca-uc.a.run.app/" height="800" width="100%" >}}
 
-[Get Started →](./01-introduction/)
+** TO BE REPLACED WITH YOUR OWN CONTENT **
