@@ -1,6 +1,6 @@
 ---
-title: "Task 3 - Start Kali RDP"
-weight: 30
+title: Start Kali RDP
+weight: 38
 ---
 
 ### ***Logging into your student environment***

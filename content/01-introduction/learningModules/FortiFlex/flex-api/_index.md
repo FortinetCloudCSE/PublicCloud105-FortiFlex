@@ -1,13 +1,27 @@
 ---
 title: "FortiFlex API"
-weight: 40
+weight: 25
 ---
+
+**API Documentation**: [FNDN](https://fndn.fortinet.net/index.php?/fortiapi/954-fortiflex/956/)
+
+**Base URL**: `https://support.fortinet.com/ES/api/fortiflex/v2/`
+
+**Authentication**: API key-based authentication
+
+**API Benefits**:
+- Programmatic control over all FortiFlex operations
+- Integration with CI/CD pipelines
+- Automated scaling based on metrics
+- Custom billing and reporting solutions
 
 ### [FortiFlex Points Calculator](https://fndn.fortinet.net/index.php?/tools/fortiflex/)
 
+
+
 {{< figure src="flex-api-hierarchy.png" >}}
 
-- REST – Representational State Transfer - https://restcookbook.com/  good explanations 
+- REST – Representational State Transfer - https://restcookbook.com/ --> good explanations 
   - HTTP Protocol and REST Architecture are intertwined 
   - The HTTP Response Codes are (should be) indicative of the status of the REST API call 
   - REST APIs are typically REST-ish as they do not fully/correctly implement the REST Architecture 

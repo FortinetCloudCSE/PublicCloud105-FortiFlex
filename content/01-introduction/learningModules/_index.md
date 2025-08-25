@@ -5,15 +5,16 @@ weight: 11
 chapter: false
 ---
 
-Before we dive into the details of FortiFlex, it helps to understand the key concepts of FortiCloud Organizations and IAM features and how they relate to FortiFlex.
 
-FortiCloud Organizations consolidate multiple FortiCloud Accounts into an Organizational Units (OUs) and manage user access to cloud products and services with fine-grained service level permissions
+### All about FortiFlex and FortiCloud Organizations
 
-In this section, we'll cover the following topics:
-- FortiCloud Organizations & IAM features
-- MSSP features
+In the next 2 sections, we'll cover the key features of FortiFlex and how FortiCloud Organizations enabled multitenancy/MSSP features for FortiFlex licensing
+
+We'll cover the following topics:
 - FortiFlex features
 - FortiFlex use cases
 - FortiFlex API
+- FortiCloud Organizations & IAM features
+- MSSP features
 - Tools and resources
 - Integrations and Automations

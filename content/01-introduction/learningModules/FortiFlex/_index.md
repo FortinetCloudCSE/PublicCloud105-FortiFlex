@@ -1,7 +1,7 @@
 ---
 title: "FortiFlex"
 date: 2025-06-10
-weight: 12
+weight: 8
 chapter: false
 ---
 
@@ -15,7 +15,15 @@ FortiFlex is Fortinet's usage-based licensing solution that transforms how organ
 - **Flexible scaling** to match business demands
 - **Simplified management** through centralized control
 
+## Supported Products?
+
+[VM's, Hardware Services, Cloud/SaaS](https://docs.fortinet.com/document/flex-vm/25.3.0/administration-guide/883447/service-offerings)
+
+{{< figure src="flex-consumption.png" alt="FortiFlex Products" class="center" >}}
+
 ## FortiFlex Flavors: Enterprise vs MSSP
+
+{{< figure src="Flex-2Programs.png" alt="FortiFlex Models" class="center" >}}
 
 - FortiFlex Enterprise(also called FortiFlex prepaid subscription service): Designed for individual organizations to manage their own Fortinet deployments with flexible licensing.
   - Flex Points are purchased in advance and consumed as Fortinet products are deployed.
@@ -27,29 +35,38 @@ FortiFlex is Fortinet's usage-based licensing solution that transforms how organ
 
 ## Core Components
 
-### 1. FortiFlex Configurations
+### 1. FortiPoints 
+
+{{< figure src="flex-points.png" alt="FortiPoints" class="center" >}}
+
+**Purpose**: Mechanism for measuring and billing usage of Fortflex licensed products
+FortiPoints facilitate:
+
+- Licensing scalability and flexibility
+- Efficient and agile procurement
+- Easy access to a broad product ecosystem
+- Simplified management
+
+### 2. FortiFlex Configurations
 
 **Purpose**: Templates that define the type and parameters of Fortinet products you want to deploy.
 
-**Key Features**:
+**Key Parameters**:
 - Product selection (FortiGate, FortiManager, FortiAnalyzer, etc.)
 - VM sizing and specifications
-- Geographic region settings
-- Usage parameters and limits
 
 **Example Use Cases**:
-- Standard FortiGate configuration for branch offices
-- High-performance setup for data centers
-- Development/testing environments
+- FortiGate: CPU Size, # of VDOMs, Service Package, Services
+- FortiAppSec Cloud: WAF, GSLB, Service Package, SOCaaS
+- FortiManager: # of Managed Devices, # of ADOMs
 
-### 2. Entitlements
+### 3. Entitlements
 
 **Purpose**: Individual instances of deployed Fortinet products that consume FortiFlex points.
 
-**Key Features**:
+**Key Parameters**:
 - Unique serial numbers for each deployment
 - Real-time usage tracking
-- Dynamic scaling capabilities
 - License lifecycle management
 
 **Billing Model**:
@@ -63,16 +80,25 @@ Due to the regulatory nature and requirements around serial numbers and billing 
 As such, we will not be creating any more entities than are necessary for demonstration purposes during this workshop
 {{% /notice %}}
 
-### 3. FortiFlex WebUI
+### 4. Reporting
+
+**Purpose**: Provides insights into FortiFlex usage and consumption patterns.
+
+**Key Features**:
+- FortiFlex Points Usage Summary by Product
+- Daily detail up to 90 days
+- Customizable reports available via API
+
+### 5. FortiFlex WebUI
 
 **Access**: [https://support.fortinet.com](https://support.fortinet.com) → FortiFlex section
 
 **Key Features**:
 - Configuration management dashboard
-- Real-time usage monitoring
+- Usage monitoring
 - Entitlement lifecycle operations
-- Cost tracking and reporting
-- User access management
+- Reporting
+- Tools - Points Calculator
 
 **Navigation Overview**:
 ```
@@ -85,29 +111,12 @@ FortiFlex Dashboard
 │   ├── Active Entitlements
 │   ├── Create New Entitlement
 │   └── Entitlement History
-├── Usage & Billing
-│   ├── Current Usage
-│   ├── Billing History
-│   └── Cost Projections
-└── Administration
-    ├── User Management
-    ├── API Keys
-    └── Notifications
+├── Reporting
+│   ├── Point Usage Summary
+│   ├── Point Usage Detail
+└── Tools
+    ├── Points Calculator
 ```
-
-### 4. FortiFlex API
-
-**API Documentation**: [FNDN](https://fndn.fortinet.net/index.php?/fortiapi/954-fortiflex/956/)
-
-**Base URL**: `https://support.fortinet.com/ES/api/fortiflex/v2/'
-
-**Authentication**: API key-based authentication
-
-**API Benefits**:
-- Programmatic control over all FortiFlex operations
-- Integration with CI/CD pipelines
-- Automated scaling based on metrics
-- Custom billing and reporting solutions
 
 ## Useful Resources
 

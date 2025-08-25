@@ -13,16 +13,28 @@
   "bannerLine3":"Building a FortiFlex Marketplace with automation",
   "shortcuts": [
   {
-    "text": "FortiCloud Workshop Login",
+    "text": "Azure Portal",
+    "URL": "https://portal.azure.com",
+    "icon": "fa-right-to-bracket",
+    "weight":5
+  },
+    {
+    "text": "FortiCloud Login",
     "URL": "https://customersso1.fortinet.com/saml-idp/proxy/demo_sallam_okta/login/",
     "icon": "fa-right-to-bracket",
     "weight":10
   },
   {
-    "text": "FortiCloud SAML Logout",
+    "text": "FortiCloud Logout",
     "URL": "https://customersso1.fortinet.com/saml-idp/proxy/demo_sallam_okta/saml/",
     "icon": "fa-right-from-bracket",
     "weight":15
+  },
+  {
+    "text": "CloudCSE FortiFlex MSSP Marketplace Demo",
+    "URL": "https://ec2-52-43-126-239.us-west-2.compute.amazonaws.com:5173/",
+    "icon": "fa-right-to-bracket",
+    "weight":18
   },
   {
     "text": "FortiCloud Organization & IAM Docs",
