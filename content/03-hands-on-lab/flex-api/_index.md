@@ -37,7 +37,7 @@ The following steps should remain relatively consistent regardless of how you're
 
 {{< figure src="p-collect-vars.png" alt="Postman Collection Variables" caption="Postman Collection Variables" >}}
 {{% notice tip %}}
-In most situations, the only variables you'll need to modify are the api_user ane apu_password.  You will notice the access_tokens populate as you launch different API requests 
+In most situations, the only variables you'll need to modify are the api_user and api_password.  You will notice the access_tokens populate as you launch different API requests 
 {{% /notice %}}
 
 {{% /tab %}}

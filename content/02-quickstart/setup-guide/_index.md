@@ -38,9 +38,6 @@ Use the credentials provided in the email you got from **<fortinetsecdevops@gmai
 1. Click **Get started** on the 'Welcome to Microsoft Azure' page.
 1. Click **Skip** on the 'How do you plan to use Azure' page.
 1. Click **Skip** on the 'Now, let show you around Azure' page.
-1. Click on the **Home** link in the upper left corner.
-
-    {{< figure src="Azure-Home.png" alt="Azure Home" >}}
 
 {{% /tab %}}
 {{% tab title="Verify Resource Group" %}}
@@ -54,12 +51,9 @@ Use the credentials provided in the email you got from **<fortinetsecdevops@gmai
 {{% tab title="Open Cloud Shell" %}}
 1. Click the **Cloud Shell** icon in the top navigation bar and Select **Bash** as the shell type
 {{< figure src="cloudshell-06.png" alt="Azure Cloud Shell" >}}
-3. Wait for the Cloud Shell to initialize
 
-   
-{{% /tab %}}
+2. Wait for the Cloud Shell to initialize
 
-{{% tab title="Cloudshell storage" %}}
 * Next, you will see a "Getting started" page.
     * Select **Mount Storage Account**
     * Choose **Internal-Training** as the Storage account subscription
@@ -79,7 +73,7 @@ Use the credentials provided in the email you got from **<fortinetsecdevops@gmai
 * On the Select storage account screen (values in drop down)
   * choose **Internal-Training** as description
   * resource group will be **"student number"-flex105-workshop** 
-  * storage account name will be "student number" floolowed by some random numbers and letters
+  * storage account name will be "student number" followed by some random numbers and letters
   * File share will be **cloudshellshare**
   * Click **Select**
 

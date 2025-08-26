@@ -89,6 +89,8 @@ Review the details of your entitlement and click **Submit** {{< figure src="enti
 
 {{% tab title="Entitlement Success" %}}
 You'll see the entitlement successfully created. Serial Number for future reference. {{< figure src="entitle-success.png" alt="Entitlement Success" >}}
+
+Click on **List** to go back to the Entitlement Listing and retrieve the Entitlement Token
 {{% /tab %}}
 
 {{% tab title="License File Token" %}}
@@ -134,6 +136,7 @@ Use the **flexXX** username you've been assigned. Replace **[XX]** with your spe
      - **FortiGate administrative username**: `flex[XX]`
      - **FortiGate password**/**Confirm password**:  `FortinetAzure2025!`
      - **Fortigate Name Prefix**:  `flex[XX]`
+     - **Resource Group**: `flex[XX]-flex104-workshop`
  - Select **Next**.
 
  {{< figure src="createVM-basic.png" alt="VM Creation Basics" >}}
@@ -208,7 +211,7 @@ You will see the matching SN, with Valid License, and the number of vCPU's allow
 
 {{< /tabs >}}
 
-### Step 6: Update the Flex Config & Entitlement to add Additional new vCPU count
+### Step 5: Update the Flex Config & Entitlement to add Additional new vCPU count
 Next, we'll update the FortiFlex configuration to increase the licensed vCPU count.
 
 {{< tabs >}} 
@@ -226,27 +229,20 @@ Update the number of CPU's to **4** and click **Next** until you reach the revie
 Click **Submit** to save the changes
 
 You will see a warning message, and you should click to **Confirm** the changes. {{< figure src="flex-config-edit-confirm.png" alt="Edit Config Confirm" >}}
+
+The entitlement linked this configuration will automatically reflect the vCPU change.
 {{% /tab %}}
 
-{{% tab title="Confirm Entitlement Change"%}}
-The entitlement linked to this configuration will automatically reflect the vCPU change. Confirm via XYZ {{< figure src="entitle-check.png" alt="Check Entitlement" >}}
-{{% /tab %}}
 
 {{< /tabs >}}
 
-### Step 5: Double the vCPU on the Azure FortiGate VM
+### Step 6: Double the vCPU on the Azure FortiGate VM
 Now, we'll change the VM size in Azure to double the vCPU from 2 to 4.
 
 {{< tabs >}} 
 
-{{% tab title="Stop the VM" %}}
-On the VM Overview Page (where you got the Public IP address, click **Stop** to stop the FortiGate VM before resizing it. {{< figure src="azure-vm-stop.png" alt="Azure Stop VM" >}}
-
-Click **Yes** to confirm stopping the VM. {{< figure src="azure-vm-stop-confirm.png" alt="Azure Stop Confirm" >}}
-{{% /tab %}}
-
 {{% tab title="Resize the VM" %}}
-Once the VM is stopped, click on **Availability + scale** and then **Size**. Select a size that has 4 vCPUs (e.g., D4pds_v6) and click "Resize". {{< figure src="azure-vm-resize.png" alt="Azure Resize VM" >}}
+Go to the VM Overview Page and then on left side click on **Availability + scale** and then **Size**. Select a size that has 4 vCPUs (e.g., Standard D4ps V6) and click "Resize". {{< figure src="azure-vm-resize.png" alt="Azure Resize VM" >}}
 
 You'll see a confirmation message that the resize is in progress. This may take a few minutes. 
 
@@ -263,9 +259,8 @@ On the VM Overview Page, you can verify that the VM size has been updated to ref
 
 {{< /tabs >}}
 
-### Step 6: Add the additional CPU's to FortiGate
+### Step 7: Add the additional CPU's to FortiGate
 
-**THIS SECTION NEEDS WORK**
 
 Finally, log back into the FortiGate VM WebUI to verify that the license now reflects the updated vCPU count, and add the additional CPU's to the FortiGate configuration.
 
@@ -285,7 +280,7 @@ Copy the Public IP address. {{< figure src="azure-vm-Pubip.png" alt="VM Public I
   - You'll see the FortiGate Status Dashboard where the License will show 2/4 Allocated vCPU 
   - You can also verify the vCPU via CLI.
   - ```get system status```
-  - You will **2/4 vCPU**. {{< figure src="fgt-SYSTEM-STATUS-4vcpu.png" alt="FGT License Info 4vCPU" >}}
+  - You will **2/4 vCPU**. {{< figure src="vm-4cpu-lic.png" alt="FGT License Info 4vCPU" >}}
 {{% /tab %}}
    
 {{% tab title="Add CPU's to FGT" %}}
@@ -300,6 +295,6 @@ Then verify the CPU count again:
 ```bash
 get system status
 ```
-You should now see **4/4 vCPU** allocated. {{< figure src="fgt-SYSTEM-STATUS-4vcpu-added.png" alt="FGT License Info 4vCPU Added" >}}
+You should now see **4/4 vCPU** allocated. {{< figure src="vm-4-4-cpu-lic.png" alt="FGT License Info 4vCPU Added" >}}
 {{% /tab %}}
 {{< /tabs >}}
