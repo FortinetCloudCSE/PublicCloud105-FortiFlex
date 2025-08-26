@@ -42,6 +42,12 @@
     "icon": "fa-tools",
     "weight":40
   },
+  {
+    "text": "CloudCSE FortiFlex Workshop Repo (Code Samples/etc)",
+    "URL": "https://github.com/FortinetCloudCSE/PublicCloud105-FortiFlex",
+    "icon": "fa-tools",
+    "weight":45
+  },
    {
     "text": "FortiFlex Docs",
     "URL": "https://docs.fortinet.com/product/flex-vm/25.2",

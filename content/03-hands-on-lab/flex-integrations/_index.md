@@ -178,6 +178,31 @@ It will take approx 5 mins to fully deploy, and then you can go check in your Az
 {{< figure src="flex-mkpl-launchvm.png" alt="Launch VM" >}}
 
 Imagine the possibilities for MSSP's to customize the deployment options (single VM's, A/P, A/A, Azure vWAN, AWS GWLB, AutoScaling, etc)
+
+You will know the VM is ready when you see the Flex Entitlement Card:
+- **Launch Azure VM** Button turn Grey
+- RED **STOP** Button Appear
+- Status turn to **Active**
+- Token Status turn to **Used**
+
+{{< figure src="flex-entitle-stop.png" alt="Entitlement Used" >}}
+{{% /tab %}}
+{{% tab title="Verify FortiGate Flex Licensing" %}}
+Go to the Azure Portal and check your resource group for a Virtual Machine prefixed with **cat-**.  This is the VM deployed from the Flex Catalog.
+
+{{% notice tip %}}
+For step-by-step instructions, reference the Azure Portal steps in the [FortiFlex WebUI steps here]( ../flex-webui/index.html)
+{{% /notice %}}
+
+Click on it, and copy the Public IP opening it in a new browser window.
+
+Login using the following:
+- Username: <Your workshop username>
+- Password: `ChangeMe123#@!`
+
+
+You will see the Serial number of the Flex Entitlement you used to provision this VM.
+
 {{% /tab %}}
 
 

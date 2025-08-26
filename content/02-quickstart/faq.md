@@ -24,10 +24,10 @@ chapter: false
 
 ### Q: Can I use FortiFlex for on-premises deployments?
 
-**A:** FortiFlex is designed for cloud deployments (Azure, AWS, GCP). For on-premises hardware, traditional licensing still applies. However, FortiFlex works great for:
-- Cloud-based FortiGate VMs
-- Hybrid architectures with cloud components
-- Development and testing environments
+**A:** FortiFlex licensing works on [VM's, Hardware Services, Cloud/SaaS](https://docs.fortinet.com/document/flex-vm/25.3.0/administration-guide/883447/service-offerings)
+- FortiGate VMs in the cloud or on Prem.
+- Hardware Services
+- Cloud/SaaS Services
 
 ## Technical Questions
 
@@ -60,33 +60,23 @@ chapter: false
 **A:** FortiFlex provides multiple automation options:
 - **REST API**: Direct integration with Terraform, Ansible, etc.
 - **Terraform Provider**: Native Fortinet provider for FortiFlex resources
-- **Azure ARM Templates**: Pre-built templates with FortiFlex integration
+- **Ansible Collection**: Playbook to interact FortiFle
 - **CI/CD Pipelines**: API calls in deployment workflows
 
 ## Lab-Specific Questions
-
-### Q: What Azure permissions do I need for this lab?
-
-**A:** Your lab account has been pre-configured with:
-- Contributor access to your assigned resource group
-- Virtual Machine Contributor role
-- Network Contributor role
-- These permissions allow VM creation and network configuration
 
 ### Q: Can I access my lab environment after the workshop?
 
 **A:** Lab environments are temporary:
 - Available during workshop + 24 hours for practice
-- Save any configurations or scripts you want to keep
-- Production FortiFlex access requires your own Fortinet account
-
+- All Scrips used in the workshop are available at the course GitHub Repo
+- 
 ### Q: What if my API calls aren't working in Postman?
 
 **A:** Common issues and solutions:
 1. **Authentication Error**: Verify API key is correct in environment variables
 2. **404 Errors**: Check the base URL is set correctly
-3. **Rate Limiting**: Wait 30 seconds between rapid API calls
-4. **JSON Formatting**: Use Postman's JSON validator for request bodies
+3. **JSON Formatting**: Use Postman's JSON validator for request bodies
 
 ### Q: How do I get production FortiFlex access for my organization?
 
@@ -115,14 +105,6 @@ chapter: false
 3. **Automated reporting** - API calls to extract usage data
 4. **Tag entitlements** with cost centers or customer codes
 5. **Schedule regular optimization reviews** to identify unused resources
-
-### Q: How do I handle disaster recovery with FortiFlex?
-
-**A:** DR strategies with FortiFlex:
-- **Cold Standby**: Create configurations but don't start entitlements until needed (no cost)
-- **Warm Standby**: Run minimal entitlements, scale up during DR events
-- **Multi-Region**: Distribute entitlements across Azure regions
-- **API Automation**: Script rapid deployment during emergencies
 
 ### Q: Should I use separate FortiFlex accounts for different customers?
 

@@ -15,6 +15,11 @@ Before starting the hands-on lab, ensure you have completed the following setup 
 - [ ] **Web Browser**: Chrome, Firefox, or Edge (latest version)
 - [ ] **Lab Environment Access**: Resource group and permissions provided by instructor
 
+{{% notice tip %}}
+Login URL's for all the portals used in this Workshop are perma-linked in the left navbar for easy reference!
+{{% /notice %}}
+
+
 ## Step 1: Azure Portal & Cloudshell Access
 
 Use these steps to access your Azure Portal environment.

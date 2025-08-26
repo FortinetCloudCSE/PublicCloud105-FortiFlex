@@ -12,6 +12,9 @@ This section provides instructions on how to clean up resources created during t
 
 {{% tab title = "Stop all FortiFlex Entitlements" %}}
 We'll use the Demo FortiFlex MSSP Marketplace to Stop all Entitlements we created as part of this workshop
+Go to the FortiFlex Enttlements Page and click **Stop** on any active entitlements.  Click to confirm.
+
+{{< figure src="flex-entitle-stop.png" alt="Stop Entitlement" >}}
 
 {{% notice info %}} 
 Remember, FortiFlex points deduction doesn't stop even if the resources stop, are terminated, or are decomissioned.  So it's imperative to maintain proper FortiFlex maintenance records or automation on the entitlements
@@ -21,7 +24,9 @@ Remember, FortiFlex points deduction doesn't stop even if the resources stop, ar
 
 {{% tab title = "Delete Forticloud IAM API Key" %}}
 
-In the FortiCloud Account, Go back through the Account Creation process, and Select the API account you created for this workshop and delete it.
+In the FortiCloud Portal, Go to the IAM Portal, Users section, Select the API account you created for this workshop and delete it.
+
+{{< figure src="fcld-iam-user-delete.png" alt="IAM user delete" >}}
 {{% /tab %}}
 
 
