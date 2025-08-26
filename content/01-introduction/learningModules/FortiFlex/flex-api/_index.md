@@ -15,10 +15,6 @@ weight: 25
 - Automated scaling based on metrics
 - Custom billing and reporting solutions
 
-### [FortiFlex Points Calculator](https://fndn.fortinet.net/index.php?/tools/fortiflex/)
-
-
-
 {{< figure src="flex-api-hierarchy.png" >}}
 
 - REST – Representational State Transfer - https://restcookbook.com/ --> good explanations 
