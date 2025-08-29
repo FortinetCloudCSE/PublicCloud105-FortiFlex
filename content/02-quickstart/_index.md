@@ -8,7 +8,7 @@ chapter: true
 
 
 
-{{< launchdemoform labdefinition="flex-105" debug="true" >}}
+{{< launchdemoform labdefinition="flex-105" >}}
 
 
 {{% notice warning %}}
