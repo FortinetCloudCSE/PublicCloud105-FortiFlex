@@ -1,0 +1,134 @@
+{{/*
+  Improved launch button shortcode
+  Usage in Markdown:
+    {{< launchdemoform lab="My-Lab-Definition" >}}
+  Notes:
+  - Reads user ID from cookie `fortiuser` (set by analytics_checkin.html)
+  - Posts application/x-www-form-urlencoded with required fields
+  - Better UX: disabled state, progress indicator, inline success/error
+*/}}
+
+{{ $lab := .Get "lab" | default (.Get "labdefinition") }}
+
+<div class="launchdemoform" data-labdefinition="{{ $lab }}">
+  <div class="launchdemoform__desc">
+    <strong>Provision your Workshop Account</strong>
+    data-version="pc105-v3"
+    <div class="launchdemoform__sub">Required for hands-on portion</div>
+    <div class="launchdemoform__who" aria-live="polite"></div>
+  </div>
+  <button type="button" class="launchdemoform__btn">Provision Workshop</button>
+  <span class="launchdemoform__status" aria-live="polite"></span>
+  <noscript><em>JavaScript is required to provision your lab.</em></noscript>
+</div>
+
+<style>
+  .launchdemoform { display: inline-grid; grid-template-columns: 1fr auto; gap: .5rem 1rem; align-items: center; padding: .75rem 1rem; border: 1px solid #e3e3e3; border-radius: 8px; }
+  .launchdemoform__desc { grid-column: 1 / span 1; }
+  .launchdemoform__sub { color: #666; font-size: .9em; }
+  .launchdemoform__who { color: #444; font-size: .9em; margin-top: .25rem; }
+  .launchdemoform__btn { grid-column: 2 / span 1; padding: .5rem .9rem; border-radius: 6px; border: 0; background: #0065ff; color: #fff; cursor: pointer; }
+  .launchdemoform__btn[disabled] { background: #9bb9ff; cursor: not-allowed; opacity: .8; }
+  .launchdemoform__status { grid-column: 1 / -1; font-size: .95em; }
+  .launchdemoform__status--ok { color: #0a7a2f; }
+  .launchdemoform__status--err { color: #b00020; }
+</style>
+
+<script>
+  {{ partial "prefill-useremail.html" . }}
+  (function () {
+    // The wrapper div for this instance sits immediately before this script tag
+    const styleEl = document.currentScript.previousElementSibling; // <style>
+    const root = styleEl && styleEl.previousElementSibling;
+    if (!root || !root.classList || !root.classList.contains('launchdemoform')) return;
+
+    // Hardcoded automation webhook URL
+    const POST_URL = "https://f1dcf3d2-d4e7-45f4-ac93-5394986d1fb4.webhook.eus.azure-automation.net/webhooks?token=6P53UsBtue8SV1dzMVHc27oVmNgMxDIQJX42fUYwazE%3d";
+    const labdefinition = root.getAttribute('data-labdefinition') || '';
+
+    const btn = root.querySelector('.launchdemoform__btn');
+    const statusEl = root.querySelector('.launchdemoform__status');
+    const whoEl = root.querySelector('.launchdemoform__who');
+
+    function setStatus(text, type) {
+      statusEl.textContent = text || '';
+      statusEl.classList.remove('launchdemoform__status--ok','launchdemoform__status--err');
+      if (type === 'ok') statusEl.classList.add('launchdemoform__status--ok');
+      if (type === 'err') statusEl.classList.add('launchdemoform__status--err');
+    }
+
+    function getStoredEmail() {
+      const emailCookie = (window.getCookieVal && getCookieVal('fortiemail')) || '';
+      if (emailCookie) return emailCookie;
+      try {
+        const raw = localStorage.getItem('forti_profile');
+        const profile = raw ? JSON.parse(raw) : null;
+        return (profile && profile.email) ? profile.email : '';
+      } catch (e) { return ''; }
+    }
+
+    function updateWho() {
+      const email = getStoredEmail();
+      const uid = (window.getCookieVal && getCookieVal('fortiuser')) || '';
+      if (email) {
+        whoEl.textContent = 'Signed in as ' + email;
+      } else if (uid) {
+        whoEl.textContent = 'Email required. Please check-in to continue.';
+      } else {
+        whoEl.textContent = 'Please check-in before provisioning.';
+      }
+      // Disable button until both session and email exist
+      btn.disabled = !(email && uid);
+      btn.title = btn.disabled ? 'Check-in required to capture your email' : '';
+    }
+
+    async function doPost() {
+      const uid = (window.getCookieVal && getCookieVal('fortiuser')) || '';
+      const email = getStoredEmail();
+      if (!email || !uid) {
+        updateWho();
+        setStatus(!email ? 'Email required. Please check-in to continue.' : 'Session not initialized. Refresh or re-check-in.', 'err');
+        return;
+      }
+      setStatus('Starting provisioning...', '');
+      btn.disabled = true; btn.setAttribute('aria-busy', 'true');
+
+      const body = new URLSearchParams({
+        customer: '1234',
+        smartticket: '5678',
+        useremail: email,
+        userop: 'Create',
+        odlconfigname: labdefinition
+      });
+      
+      console.info('Provision click', { email, uid, labdefinition });
+      try {
+
+        const res = await fetch(POST_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: body.toString()
+        });
+        console.info('Provision result', res.status, await res.text());
+        const ok = res.ok;
+        let text = '';
+        try { text = await res.text(); } catch (e) { text = ''; }
+        if (ok) {
+          setStatus('Provisioning request accepted. Please wait for your lab to be prepared.', 'ok');
+        } else {
+          setStatus('Provisioning failed: ' + (text || ('HTTP ' + res.status)), 'err');
+        }
+      } catch (err) {
+        console.error('Provision error', err);
+        setStatus('Network error while provisioning: ' + (err && err.message ? err.message : err), 'err');
+      } finally {
+        btn.disabled = false; btn.removeAttribute('aria-busy');
+      }
+    }
+
+    btn.addEventListener('click', doPost);
+    updateWho();
+    // Refresh state if cookies change between page focus cycles
+    window.addEventListener('focus', updateWho);
+  })();
+</script>

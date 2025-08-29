@@ -5,6 +5,13 @@ weight: 32
 chapter: false
 ---
 
+
+|                    |                                                                                   |  
+|:------------------:|:----------------------------------------------------------------------------------|
+|      **Goal**      | Gain Experience with the FortiFlex API                                            |
+|      **Task**      | Import FortiCloud Postman Collection, Authenticate, and explore the FortiFlex API | 
+| **Validation**     | Stop and Start FortiFlex API via Postman                                          |
+
 # Automation using FortiFlex API
 
 In this section, you'll learn how to automate FortiFlex operations using the REST API and Postman, then explore serverless automation with Azure Functions.
@@ -123,7 +130,7 @@ To view configurations
   - You can get your FortiCloud Account ID from the FortiCloud Portal top right corner
     - click on the down arrow next to your account name, and look for the **Member Account ID**
     {{< figure src="fcld-accountId.png" alt="FortiCloud Account ID" caption="FortiCloud Account ID" >}}
-  - enter both into the **Body** of the **Get Configurations** request, and click **Send**
+  - enter both into the **Body** of the **Configurations/list** request, and click **Send**
   - You should see a response with a 200 OK status and a list of configurations in the response body
   {{< figure src="p-config-list.png" alt="FortiFlex Configurations List Body" caption="FortiFlex Configurations List Body" >}}
 

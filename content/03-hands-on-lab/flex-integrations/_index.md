@@ -5,6 +5,14 @@ weight: 33
 chapter: false
 ---
 
+
+|                            |                                                                                                                     |  
+|:--------------------------:|:--------------------------------------------------------------------------------------------------------------------|
+| **Goal**                   | Explore the capabilities of advanced integrations with FortiFlex                                                    |
+| **Task**                   | Launch Terraform Apply with Flex Token, Explore Reporting with Python Script, Interact with Demo MSSP Marketplace   | 
+| **Validation** | FortiFlex Licensed 4vCPU FortiGate VM in Azure with matching SN and License.                                        |
+
+
 In this section, we'll explore how to automate FortiFlex operations using Terraform, take a peak at what an MSSP implementation for FortiFlex Might look like.
 
 ## 1. Terraform
@@ -20,7 +28,7 @@ Run the following commands to clone this repo and navigate to the Terraform dire
 
 ```bash
 git clone https://github.com/FortinetCloudCSE/PublicCloud105-FortiFlex.git
-cd PublicCloud105-FortiFlex/content/03-hands-on-lab/flex-integrations/terraform/azure
+cd PublicCloud105-FortiFlex/terraform/azure
 export ARM_SUBSCRIPTION_ID=$(az account show --query "id" -otsv)
 ```
 {{% /tab %}}
@@ -76,7 +84,7 @@ We'll use python from the Azure Cloudshell, so head over to the [Azure Portal](h
 ```bash
 cd ~/PublicCloud105-FortiFlex/scripts/python
 pip install -r requirements.txt --user
-python fortiflex_points_report.py
+python fortiflex_points_by_config.py
 ```
 
 You'll be prompted to enter the following information:
