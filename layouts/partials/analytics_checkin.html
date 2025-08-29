@@ -124,7 +124,8 @@ form.addEventListener('submit', function() {
 });
 
 } else {
-  const knownEmail = getCookie('fortiemail') || (loadProfileFromStorage() && loadProfileFromStorage().email) || '';
+  const profile = loadProfileFromStorage();
+  const knownEmail = getCookie('fortiemail') || (profile && profile.email) || '';
   container.innerHTML = '<p><b><font size="7">Welcome!</font></b></p>' +
     '<p><b>Thank you for checking into this session! Your session will persist for 5 days across the Fortinet CSE Workshop estate. You may now proceed with the workshop!!!</b></p>' +
     (knownEmail ? ('<p><i>Signed in as: ' + knownEmail + '</i></p>') : '') +
@@ -133,9 +134,12 @@ form.addEventListener('submit', function() {
  </script>
 
 <script>
-  document.getElementById('current_page').value = window.location.href;
+  // These inputs exist only when the check-in form is rendered
+  const currentPageEl = document.getElementById('current_page');
+  if (currentPageEl) currentPageEl.value = window.location.href;
   var labdefinition = "something";
-  document.getElementById('labdefinition').value = labdefinition;
+  const labDefEl = document.getElementById('labdefinition');
+  if (labDefEl) labDefEl.value = labdefinition;
 
 let uuid = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now());
 const uidEl = document.getElementById('uid');

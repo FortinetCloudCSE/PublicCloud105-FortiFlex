@@ -6,9 +6,9 @@ chapter: true
 ---
 
 
-Enter your email to provision a user account & Credentials for use in this workshop.
 
-{{< launchdemoform labdefinition="flex-105" >}}
+
+{{< launchdemoform labdefinition="flex-105" debug="true" >}}
 
 
 {{% notice warning %}}

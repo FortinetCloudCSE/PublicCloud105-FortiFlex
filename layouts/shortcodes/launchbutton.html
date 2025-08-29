@@ -46,6 +46,7 @@
   </form>
 
   <script>
+    {{ partial "prefill-useremail.html" . }}
     (function() {
       var form = document.getElementById({{ printf "%q" $fid }});
       if (!form) return;

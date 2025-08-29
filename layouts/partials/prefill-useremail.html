@@ -49,11 +49,15 @@
 
     // Also wire up hidden UUID for correlation if available
     const uid = window.getCookieVal('fortiuser');
-    const uidHidden =
-      document.querySelector('#fortiuser, input[name=\"fortiuser\"]');
+    const uidHidden = document.querySelector('#fortiuser, input[name="fortiuser"]');
     if (uidHidden && uid && !uidHidden.value) uidHidden.value = uid;
   }
 
-  document.addEventListener('DOMContentLoaded', prefillFromStoredProfile);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', prefillFromStoredProfile);
+  } else {
+    // DOM is already ready (script loaded late); run immediately
+    prefillFromStoredProfile();
+  }
 })();
 </script>
