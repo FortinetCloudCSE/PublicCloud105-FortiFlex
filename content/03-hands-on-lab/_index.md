@@ -17,4 +17,4 @@ In this workshop, we'll use a crawl, walk, run approach to obtaining practical e
    - Integrating FortiFlex API with Terraform IaC
    - Demoing a PoC MSSP FortiFlex MSSP Marketplace Integration PoC
 
-   {{< iframe src="https://ec2-52-43-126-239.us-west-2.compute.amazonaws.com:8080/gamebytag?tag=ch3" height="800" width="100%" >}}
+   {{< iframe src="https://ec2-52-43-126-239.us-west-2.compute.amazonaws.com:8080/scoresbytag" height="800" width="100%" >}}
