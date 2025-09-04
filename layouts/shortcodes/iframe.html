@@ -12,9 +12,22 @@ function getCookie(name) {
 
 function setupCTFIframe() {
   const iframe = document.getElementById('ctf-iframe');
-  const baseSrc = "{{ .Get "src" }}";
+  let baseSrc = "{{ .Get "src" }}";
+  
+  console.log('Initial iframe src:', baseSrc);
+  console.log('All cookies:', document.cookie);
+  
+  // Automatically upgrade HTTP to HTTPS for mixed content security
+  if (baseSrc.startsWith('http://') && window.location.protocol === 'https:') {
+    baseSrc = baseSrc.replace('http://', 'https://');
+    console.log('Upgraded iframe URL to HTTPS:', baseSrc);
+  }
+  
   const fortiEmail = getCookie('fortiemail');
   const fortiUser = getCookie('fortiuser');
+  
+  console.log('Retrieved fortiemail cookie:', fortiEmail);
+  console.log('Retrieved fortiuser cookie:', fortiUser);
   
   let params = [];
   if (fortiEmail) {
@@ -24,11 +37,17 @@ function setupCTFIframe() {
     params.push('fortiuser=' + encodeURIComponent(fortiUser));
   }
   
+  console.log('URL parameters to add:', params);
+  
   if (params.length > 0) {
     const separator = baseSrc.includes('?') ? '&' : '?';
     iframe.src = baseSrc + separator + params.join('&');
+  } else {
+    iframe.src = baseSrc;
+    console.log('No cookies found, using original URL');
   }
-  // If no cookies, iframe loads with original src (manual login)
+  
+  console.log('Final iframe URL:', iframe.src);
 }
 
 // Run when page loads
