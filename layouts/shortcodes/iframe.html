@@ -1,1 +1,40 @@
-<iframe src="{{ .Get "src" }}" width="{{ .Get "width" | default "100%" }}" height="{{ .Get "height" | default "600" }}"   allow="same-origin" sandbox="allow-scripts allow-same-origin" frameborder="0" allowfullscreen></iframe>
+<div id="ctf-iframe-container">
+  <iframe id="ctf-iframe" src="{{ .Get "src" }}" width="{{ .Get "width" | default "100%" }}" height="{{ .Get "height" | default "600" }}" allow="same-origin" sandbox="allow-scripts allow-same-origin allow-forms allow-top-navigation allow-popups" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<script>
+function getCookie(name) {
+  let value = "; " + document.cookie;
+  let parts = value.split("; " + name + "=");
+  if (parts.length == 2) return parts.pop().split(";").shift();
+  return null;
+}
+
+function setupCTFIframe() {
+  const iframe = document.getElementById('ctf-iframe');
+  const baseSrc = "{{ .Get "src" }}";
+  const fortiEmail = getCookie('fortiemail');
+  const fortiUser = getCookie('fortiuser');
+  
+  let params = [];
+  if (fortiEmail) {
+    params.push('fortiemail=' + encodeURIComponent(fortiEmail));
+  }
+  if (fortiUser) {
+    params.push('fortiuser=' + encodeURIComponent(fortiUser));
+  }
+  
+  if (params.length > 0) {
+    const separator = baseSrc.includes('?') ? '&' : '?';
+    iframe.src = baseSrc + separator + params.join('&');
+  }
+  // If no cookies, iframe loads with original src (manual login)
+}
+
+// Run when page loads
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', setupCTFIframe);
+} else {
+  setupCTFIframe();
+}
+</script>

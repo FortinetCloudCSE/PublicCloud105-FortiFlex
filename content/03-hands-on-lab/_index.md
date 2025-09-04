@@ -16,3 +16,5 @@ In this workshop, we'll use a crawl, walk, run approach to obtaining practical e
 3. Integration Use Cases - 
    - Integrating FortiFlex API with Terraform IaC
    - Demoing a PoC MSSP FortiFlex MSSP Marketplace Integration PoC
+
+   {{< iframe src="http://ec2-52-43-126-239.us-west-2.compute.amazonaws.com:8080/gamebytag?tag=ch2" height="800" width="100%" >}}
