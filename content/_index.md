@@ -36,4 +36,3 @@ With FortiFlex's usage-based licensing and API-driven automation, CloudSecure So
 {{< iframe src="https://ec2-52-43-126-239.us-west-2.compute.amazonaws.com:8080/gamebytag?tag=ch1" height="800" width="100%" >}}
 
 ** TO BE REPLACED WITH YOUR OWN CONTENT **
-
