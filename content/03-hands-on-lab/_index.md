@@ -18,4 +18,4 @@ In this workshop, we'll use a crawl, walk, run approach to obtaining practical e
    - Demoing a PoC MSSP FortiFlex MSSP Marketplace Integration PoC
 
 
-   {{< iframe src="https://jeff-test3-o32xpkqaca-uc.a.run.app/scoresbytag" height="800" width="100%" >}}
+   {{< quizframe page="/scoresbytag" height="800" width="100%" >}}

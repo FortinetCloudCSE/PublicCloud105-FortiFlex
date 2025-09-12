@@ -33,6 +33,6 @@ With FortiFlex's usage-based licensing and API-driven automation, CloudSecure So
 
 # CTF Quiz Example
 ** TO BE REPLACED WITH YOUR OWN CONTENT **
-{{< iframe src="https://jeff-test3-o32xpkqaca-uc.a.run.app/gamebytag?tag=ch1" height="800" width="100%" >}}
+{{< quizframe page="/gamebytag?tag=ch1" height="800" width="100%" >}}
 
 ** TO BE REPLACED WITH YOUR OWN CONTENT **

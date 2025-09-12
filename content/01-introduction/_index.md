@@ -91,4 +91,4 @@ You'll know you've mastered the material when you can:
 
 
 
-   {{< iframe src="https://jeff-test3-o32xpkqaca-uc.a.run.app/gamebytag?tag=ch2" height="800" width="100%" >}}
+   {{< quizframe page="/gamebytag?tag=ch2" height="800" width="100%" >}}
