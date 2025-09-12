@@ -34,6 +34,3 @@ In the FortiCloud Portal, Go to the IAM Portal, Users section, Select the API ac
 ## Chapter 3 Quiz
 
 Test your knowledge with this final quiz covering all the concepts from this workshop:
-
-{{< iframe src="https://ec2-52-43-126-239.us-west-2.compute.amazonaws.com:8080/gamebytag?tag=ch3" height="800" width="100%" >}}
-
