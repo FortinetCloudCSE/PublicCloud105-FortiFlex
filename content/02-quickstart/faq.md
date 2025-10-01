@@ -9,7 +9,7 @@ chapter: false
 ### Q: What's the difference between FortiFlex and traditional Fortinet licensing?
 
 **A:** Traditional licensing requires purchasing fixed-term licenses upfront (typically 1-3 years) for specific capacities. FortiFlex uses a usage-based model where you:
-- Pay only for actual consumption (hourly billing)
+- Pay only for actual consumption (daily billing)
 - Scale resources up/down automatically
 - Provision instantly without procurement delays
 - Get consolidated billing across all Fortinet products
@@ -17,10 +17,12 @@ chapter: false
 ### Q: How does FortiFlex pricing work?
 
 **A:** FortiFlex uses a "points" system:
-- Different VM sizes consume different points per hour
-- Example: 2-vCPU FortiGate = 2 points/hour, 4-vCPU = 4 points/hour
-- Points are purchased in advance and consumed as resources run
-- Detailed pricing available in the FortiFlex portal under "Pricing Calculator"
+- Different VM sizes consume different points
+- Example: FortiGate Enterprice Service Bundle 2-vCPU = 6.39 points/day, 4-vCPU = 12.91 points/day
+- For Enterprise customers, Points are purchased in advance and consumed as resources run
+- For MSSP Customers with special agreements, Points are post-paid,
+- [Detailed differences in the programs can be found here](https://docs.fortinet.com/document/flex-vm/25.3.0/fortiflex-concept-guide/310137/enterprise-and-mssp)
+- Detailed pricing available in the [FortiFlex portal under "Pricing Calculator"](https://fndn.fortinet.net/index.php?/tools/fortiflex/)
 
 ### Q: Can I use FortiFlex for on-premises deployments?
 
@@ -60,7 +62,7 @@ chapter: false
 **A:** FortiFlex provides multiple automation options:
 - **REST API**: Direct integration with Terraform, Ansible, etc.
 - **Terraform Provider**: Native Fortinet provider for FortiFlex resources
-- **Ansible Collection**: Playbook to interact FortiFle
+- **Ansible Collection**: Playbook to interact FortiFlex
 - **CI/CD Pipelines**: API calls in deployment workflows
 
 ## Lab-Specific Questions
@@ -69,8 +71,9 @@ chapter: false
 
 **A:** Lab environments are temporary:
 - Available during workshop + 24 hours for practice
-- All Scrips used in the workshop are available at the course GitHub Repo
-- 
+- All Scripts used in the workshop are available at the course GitHub Repo
+
+
 ### Q: What if my API calls aren't working in Postman?
 
 **A:** Common issues and solutions:
@@ -143,4 +146,4 @@ chapter: false
 
 **Questions Answered?** Time to get hands-on with FortiFlex!
 
-[Next: Hands-On Lab →](../03-hands-on-lab/)
+[Next: Hands-On Lab →]({{% ref "/03-hands-on-lab/" %}})

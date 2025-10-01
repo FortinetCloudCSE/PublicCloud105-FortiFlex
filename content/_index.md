@@ -31,8 +31,3 @@ With FortiFlex's usage-based licensing and API-driven automation, CloudSecure So
 
 **Workshop Goal**: Learn how to implement FortiFlex to solve similar challenges in your organization through hands-on experience with both manual operations and API automation.
 
-# CTF Quiz Example
-** TO BE REPLACED WITH YOUR OWN CONTENT **
-{{< quizframe page="/gamebytag?tag=ch1" height="800" width="100%" >}}
-
-** TO BE REPLACED WITH YOUR OWN CONTENT **

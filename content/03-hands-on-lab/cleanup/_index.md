@@ -1,7 +1,7 @@
 ---
 title: "Workshop Cleanup"
 date: 2025-06-10
-weight: 50
+weight: 60
 chapter: false
 ---
 
@@ -27,10 +27,10 @@ Remember, FortiFlex points deduction doesn't stop even if the resources stop, ar
 In the FortiCloud Portal, Go to the IAM Portal, Users section, Select the API account you created for this workshop and delete it.
 
 {{< figure src="fcld-iam-user-delete.png" alt="IAM user delete" >}}
+
+{{% notice warning %}}
+After deleting your API key, the FortiFlex Marketplace will cease to function!
+{{% /notice %}}
 {{% /tab %}}
 
 {{< /tabs >}}
-
-## Chapter 3 Quiz
-
-Test your knowledge with this final quiz covering all the concepts from this workshop:

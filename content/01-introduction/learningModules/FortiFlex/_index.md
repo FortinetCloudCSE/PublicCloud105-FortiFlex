@@ -35,11 +35,11 @@ FortiFlex is Fortinet's usage-based licensing solution that transforms how organ
 
 ## Core Components
 
-### 1. FortiPoints 
+### 1. FortiFlex Points 
 
 {{< figure src="flex-points.png" alt="FortiPoints" class="center" >}}
 
-**Purpose**: Mechanism for measuring and billing usage of Fortflex licensed products
+**Purpose**: Mechanism for measuring and billing usage of FortFlex licensed products
 FortiPoints facilitate:
 
 - Licensing scalability and flexibility
@@ -60,7 +60,7 @@ FortiPoints facilitate:
 - FortiAppSec Cloud: WAF, GSLB, Service Package, SOCaaS
 - FortiManager: # of Managed Devices, # of ADOMs
 
-### 3. Entitlements
+### 3. FortiFlex Entitlements
 
 **Purpose**: Individual instances of deployed Fortinet products that consume FortiFlex points.
 
@@ -70,7 +70,7 @@ FortiPoints facilitate:
 - License lifecycle management
 
 **Billing Model**:
-- Charged by points per hour of operation
+- Charged by points per Day of operation
 - Different VM sizes consume different point rates
 - Automatic billing integration with Fortinet accounts
 
@@ -121,16 +121,14 @@ FortiFlex Dashboard
 ## Useful Resources
 
 ### Documentation
-- [**FortiFlex Docs**](https://docs.fortinet.com/product/flex-vm/25.2)
-- [**API Documentation**](https://fndn.fortinet.net/index.php?/fortiapi/954-fortiflex/956/)
+- [**FortiFlex Documentation**](https://docs.fortinet.com/product/flex-vm/25.2)
+- [**FortiFlex API Documentation**](https://fndn.fortinet.net/index.php?/fortiapi/954-fortiflex/956/)
 
 ### Tools & Integrations
 - **FortiFlex Calculator**: [Estimate your FortiFlex costs](https://fndn.fortinet.net/index.php?/tools/fortiflex/)
-- **Code**: [Ansible, Terraform, Python, and Postman](https://github.com/FortinetCloudCSE/fortiflexvm-api)
+- **Sample Scripts & Code**: [Ansible, Terraform, Python, and Postman](https://github.com/FortinetCloudCSE/fortiflexvm-api)
 - **Terraform Provider**: [Infrastructure-as-code integration](https://registry.terraform.io/providers/fortinetdev/fortiflexvm/latest )
 - **Ansible Module**: https://galaxy.ansible.com/ui/repo/published/fortinet/fortiflexvm/ 
 
 
 ---
-
-Now that you understand the FortiFlex components, let's get hands-on experience with the platform.

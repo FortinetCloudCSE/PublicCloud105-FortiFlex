@@ -55,7 +55,7 @@ By the end of this workshop, you will be able to:
 
 ### Prerequisites
 - **Technical Background**: Basics of web apps
-- **Fortinet Knowledge**: Basic familiarity with FortiGate and 
+- **Fortinet Knowledge**: Basic familiarity with FortiGate
 
 
 ### Workshop Duration
@@ -89,6 +89,3 @@ You'll know you've mastered the material when you can:
 
 **Ready to get started?** Let's explore the FortiFlex platform components.
 
-
-
-   {{< quizframe page="/gamebytag?tag=ch2" height="800" width="100%" >}}

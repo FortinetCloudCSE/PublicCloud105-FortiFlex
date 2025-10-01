@@ -11,10 +11,16 @@
   "bannerLine1":"Public Cloud 105",
   "bannerLine2":"Achieving operational agility with FortiFlex",
   "bannerLine3":"Building a FortiFlex Marketplace with automation",
-  "quizUrl":"https://publiccloud105-fortiflex-o32xpkqaca-uc.a.run.app/",
+  "quizUrl":"https://publiccloud105-fortiflex-o32xpkqaca-uc.a.run.app",
+  "analyticsBaseUrl":"https://tecanalytics.forticloudcse.com",
   "shortcuts": [
   {
-    "text": "Azure Portal",
+    "text": "Workshop Presentation",
+    "URL": "XPERTS2025-PublicCloud105-FortiFlex.pdf?download=true",
+    "icon": "fa-download",
+    "weight":1
+  },
+  { "text": "Azure Portal",
     "URL": "https://portal.azure.com",
     "icon": "fa-right-to-bracket",
     "weight":5
