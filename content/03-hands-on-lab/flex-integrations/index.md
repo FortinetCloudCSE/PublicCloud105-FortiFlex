@@ -23,7 +23,7 @@ Let's take a peek at how we'd take advantage of the Terraform provider for Forti
 {{< tabs >}}
 
 {{% tab title="Terraform Setup" %}}
-We'll use Terraform in Cloudshell from the Azure Portal, so head over to the Azure Portal and launch Cloudshell.
+We'll use Terraform in Cloudshell from the Azure Portal, so head over to the Azure Portal and launch Cloudshell.  Recall steps from [setup tasks]({{% ref "02-quickstart/setup-guide/" %}}) to find cloudshell
 
 Run the following commands to clone this repo and navigate to the Terraform directory:
 
@@ -211,7 +211,7 @@ For step-by-step instructions, reference the Azure Portal steps in the [FortiFle
 Click on the VM, and copy the Public IP opening it in a new browser window.
 
 Login using the following (replacing **[XX]** with your student number):
-- Username: "**flex[XX]@fortinetcloud.onmicrosoft.com**"
+- Username: "**flex[XX]**"
 - Password: `ChangeMe123#@!`
 
 

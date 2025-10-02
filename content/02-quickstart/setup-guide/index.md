@@ -17,6 +17,8 @@ Before starting the hands-on lab, ensure you have completed the following setup 
 
 {{% notice tip %}}
 Login URL's for all the portals used in this Workshop are perma-linked in the left navbar for easy reference!
+
+To have the best experience, use a single browser for the entire workshop and all related logins.
 {{% /notice %}}
 
 
@@ -86,7 +88,9 @@ Use the credentials provided in the email you got from **<fortinetsecdevops@gmai
 ## Step 2: Fortinet Support Portal Access
 
 {{% notice style="tip" %}}
-We've provisioned a Fortinet Support Portal account with appropriate Flex entitlements for this workshop  Same credentials as the Azure Portal, slightly different logon procedure.  **YOU MUST LOGIN USING THIS URL** which is conveniently perma-listed on the left navbar, and as long as you use the same browser as your Azure login, you should be signed in with SAML SSO
+We've provisioned a Fortinet Support Portal account with appropriate Flex entitlements for this workshop  Same credentials as the Azure Portal, slightly different logon procedure.  **YOU MUST LOGIN USING THIS URL** which is conveniently perma-listed on the left navbar, and as long as you use the same browser as your Azure login, you should be signed in with SAML SSO.
+
+If your FortiCloud Login times out, click on the **FortiCloud Login** Link from the Left Navbar to get automatically logged back in.
 {{% /notice %}}
 
 

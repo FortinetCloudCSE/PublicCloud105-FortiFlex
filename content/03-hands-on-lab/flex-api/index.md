@@ -85,7 +85,7 @@ Click on **Users (left nav menu) --> Add New --> API User**
 {{<figure src="create-api-user.png" alt="Create FortiFlex API User"  >}}
 {{% /tab %}}
 {{% tab title="API User" %}}
-- Enter a username for the API User such as: `flexapiuser`
+- Enter a description for the API User such as: `flex[XX]` where [XX] is your flex student number
 - Choose the **SysAdmin** Permission Profile
 - Click Next
 {{<figure src="add-api-user.png" alt="API User" >}}

@@ -197,10 +197,13 @@ Copy the Public IP address. {{< figure src="azure-vm-Pubip.png" alt="VM Public I
 
 <div>
    {{< figure src="fgt-vm-sn.png" alt="FGT SN" >}}
+   {{% notice tip %}}
+   FortiOS View Above and FortiFlex WebUI view Below.
+   {{% /notice %}}
    {{< figure src="flex-vm-sn.png" alt="Flex SN" >}}
 </div>
 
-You can also verify the license via CLI.
+You can also verify the license via CLI in FortiOS.
 ```get system status``` 
 You will see the matching SN, with Valid License, and the number of vCPU's allowedreflecting the assigned entitlement. {{< figure src="fgt-SYSTEM-STATUS.png" alt="FGT License Info" >}}
 {{% /tab %}}
