@@ -56,10 +56,10 @@ chapter: false
 ### Q: Can I change VM sizes after deployment?
 
 **A:** Yes! This is a key FortiFlex advantage:
-- Stop the entitlement in FortiFlex
-- Modify the VM size in your cloud provider
-- Update the entitlement configuration in FortiFlex
-- Restart the entitlement
+- Update the FortiFlex configuration which the entitlement is governed by (this will impact all entitlements for that configuration)
+- Modify the VM size in your cloud provider (which will trigger a VM reboot)
+- FortiFlex Licensing will automatically update License coverage
+- FortiOS should automatically add the CPU's after the resize reboot, but there are open bugs on this issue.  You may need to add the CPUs or reboot the device again to get FortiOS to recognize the new CPU's.
 - Billing automatically adjusts to new point consumption
 
 ### Q: How does FortiFlex integrate with Infrastructure-as-Code?
