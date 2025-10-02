@@ -31,6 +31,11 @@ chapter: false
 - Hardware Services
 - Cloud/SaaS Services
 
+### Q: Does FortiFlex Points Consumption Stop if my VM/Service stops?
+
+**A:** No, there is currently no inherrent link between individual services and Fortinet Entitlements.  If the Entitlement is active, it will incure FortiFlex Point deductions, regardless of the VM/service state
+- Customers can setup triggers and automated actions using the FortiFlex API, FortiGate Automation Stitches, and automation platforms of their choice to monitor instance state and trigger FortiFlex Entitlement stop/reactivate
+
 ## Technical Questions
 
 ### Q: What happens if I run out of FortiFlex points?
