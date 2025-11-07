@@ -115,8 +115,10 @@ This task will explore how a Managed Security Service Provider (MSSP) might impl
 
 {{< tabs >}}
 
+
+
 {{% tab title="Demo site" %}}
-Open the [CloudCSE FortiFlex Marketplace Demo](https://ec2-52-43-126-239.us-west-2.compute.amazonaws.com:5173/) and click "Sign In" at the top right.
+Open the [CloudCSE FortiFlex Marketplace Demo]() and click "Sign In" at the top right.
 
 As long as you're using the same browser you used for logging into the Azure and FortiCloud Portals, you should be auto logged in with SAML and see your workshop account username next to the login button.
 

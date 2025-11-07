@@ -39,7 +39,7 @@
   },
   {
     "text": "CloudCSE FortiFlex MSSP Marketplace Demo",
-    "URL": "https://ec2-52-43-126-239.us-west-2.compute.amazonaws.com:5173/",
+    "URL": "https://fortiflex-marketplace.fortinetcloudcse.com/",
     "icon": "fa-right-to-bracket",
     "weight":18
   },
