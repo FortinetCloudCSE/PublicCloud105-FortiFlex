@@ -18,6 +18,7 @@ In this section, you'll learn about the building blocks of automating FortiFlex 
 
 We'll start by setting up Postman with our FortiFlex Collection, then create an API Key in FortiCloud, and finally use Postman to interact with the FortiFlex API. 
 
+Make sure you have Postman setup, and if not check Step 3 of the [Setup Guide!]({{% ref "/02-quickstart/setup-guide/" %}})
 
 ### Step 1: Import FortiFlex Postman Collection 
 The following steps should remain relatively consistent regardless of how you're using Postman, so open Postman and proceed.

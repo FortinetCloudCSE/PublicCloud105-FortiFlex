@@ -13,7 +13,7 @@ chapter: false
 
 In this section, you'll learn how to manage FortiFlex entitlements through the FortiCloud web interface, providing a foundational understanding of FortFlex,
 {{% notice note %}}
-If you need help accessing Azure FortiCloud/FortiFlex Portal, please refer to the [Workshop Setup Guide](../../02-quickstart/setup-guide/index.html) page from QuickStart.
+If you need help accessing Azure/FortiCloud/FortiFlex Portal, please refer to the [Workshop Setup Guide]({{% ref "/02-quickstart/setup-guide/" %}}) page from QuickStart.
 {{% /notice %}}
 
 

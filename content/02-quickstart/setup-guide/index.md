@@ -132,7 +132,6 @@ From the FortiCloud Main Portal, look for "FortiFlex" in the main navigation men
 We will be using an existing Postman Collection to interact with the FortiFlex API
 1. [Postman desktop application](https://www.postman.com/) will provide the best user experience and is a great tool for working with API's
 2. If you can't install the Desktop client for some reason, you can use [Postman's web version](https://identity.getpostman.com/login?continue=https%3A%2F%2Fgo.postman.co%2Fhome) requiring a login (you can use your personal email)
-3. If you'd prefer not creating a Postman login, you can create an Azure VM with Postman pre-installed, and import the 
 
 ### Installing Postman
 

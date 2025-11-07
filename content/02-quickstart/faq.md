@@ -141,11 +141,11 @@ chapter: false
 
 ### Q: Can I migrate from traditional licenses to FortiFlex?
 
-**A:** Migration options:
+**A:** YES for all supported items! Migration options:
 - **New Deployments**: Use FortiFlex for all new cloud deployments
-- **Existing VMs**: Contact Fortinet support for migration assistance
+- **Existing VMs**: VM Serial Numbers will need to change.  Contact Fortinet support for migration assistance
 - **Hybrid Approach**: Keep existing traditional licenses, use FortiFlex for new/scaled resources
-- **Contract Renewal**: Consider FortiFlex when traditional licenses expire
+- **Contract Renewal**: Consider FortiFlex when traditional licenses expire 
 
 ---
 
