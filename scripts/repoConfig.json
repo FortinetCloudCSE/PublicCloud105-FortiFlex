@@ -6,6 +6,7 @@
   "logoBannerText":"Public Cloud 105",
   "logoBannerSubText":"FortiFlex",
   "errorLevel":"warning",
+  "provisionApiBaseUrl": "https://func-cse-lab-provisioning.azurewebsites.net",
   "googleServicesID":"G-5RZBH288ST",
   "marketingCode": "XPerts25",
   "bannerLine1":"Public Cloud 105",
