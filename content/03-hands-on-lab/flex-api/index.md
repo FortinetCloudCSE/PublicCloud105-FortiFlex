@@ -29,7 +29,7 @@ The following steps should remain relatively consistent regardless of how you're
   - In Postman, use an existing collection, or create a new one if you'd like
   - click on **File**-->**Import** in the top left corner, or **Import** button in the top left of the collection
   - On the import dialog, paste the following URL: 
-    - `https://raw.githubusercontent.com/FortinetCloudCSE/fortiflexvm-api/refs/heads/main/api/Postman/v2/FortiCloud.postman_collection.json`
+    - `https://github.com/FortinetCloudCSE/fortiflexvm-api/blob/main/api/Postman/v2/FortiCloud%20Collection%20AssetMgmt%2C%20Organization%2C%20IAM%2C%20FortiFlex.postman_collection.json`
   - You should see the **FortiCloud Collection** appear in the left sidebar
   {{< figure src="p-import.png" alt="Postman Import Collection" >}}
 {{% /tab %}}
